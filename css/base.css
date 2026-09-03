@@ -150,12 +150,14 @@ footer{padding:0; background:var(--bg); color:var(--ink);}
 .footer-row{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; font-size:12.5px; color:var(--ink-faint); }
 .footer-bottom{ border-top:1px solid var(--card-border); padding:18px 0; }
 @media (max-width:640px){
-  .footer-brands{ flex-direction:column; align-items:flex-start; gap:22px; }
-  .footer-dentflow .logo-mark{width:32px; height:32px;}
-  .footer-dentflow .logo-word{font-size:17px;}
-  .footer-koby{ align-items:flex-start; text-align:left; margin-left:0; width:auto; }
-  .footer-koby img{height:36px;}
-  .footer-koby p{white-space:normal;}
+  .site-footer-main{padding-top:22px; padding-bottom:22px;}
+  .footer-brands{ align-items:flex-start; gap:14px; }
+  .footer-dentflow .logo-mark{width:28px; height:28px;}
+  .footer-dentflow .logo-word{font-size:15px;}
+  .footer-koby{ gap:6px; }
+  .footer-koby img{height:28px;}
+  .footer-koby p{font-size:11px; white-space:normal;}
+  .footer-bottom{padding:14px 0;}
 }
 
 .eyebrow{ display:inline-flex; align-items:center; gap:8px; font-size:12.5px; letter-spacing:1.5px; color:var(--blue); font-weight:600; margin-bottom:18px; }
