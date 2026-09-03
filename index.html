@@ -47,13 +47,9 @@ h1 .accent{color:var(--blue);}
 @keyframes float{ 0%,100%{transform:translateY(0);} 50%{transform:translateY(-8px);} }
 @media (prefers-reduced-motion:reduce){ .bubble{animation:none;} }
 @media (max-width:520px){ .bubble{font-size:10px; max-width:110px; padding:6px 9px;} }
-.fv-icon{ display:flex; align-items:center; justify-content:center; width:100%; height:100%; font-size:38px; }
 .fv-lang{ background:url("assets/img/language-wordcloud.jpg") center/cover no-repeat; }
-.fv-daynight{ background:linear-gradient(135deg,#0c1a2d,#123055); color:#3aa8ff; }
-.fv-dash{display:flex; padding:12px; gap:10px; height:100%;}
-.fv-dash .rows{flex:0 0 42%; display:flex; flex-direction:column; gap:7px; justify-content:center;}
-.fv-dash .rows span{font-size:10px; color:var(--ink-dim); background:#1a232c; border-radius:5px; padding:5px 7px;}
-.fv-dash .map{flex:1; border-radius:8px; background:linear-gradient(135deg,#123055,#1f7fe0); display:flex; align-items:center; justify-content:center; font-size:30px;}
+.fv-daynight{ background:url("assets/img/feature-24hrs.jpg") center/cover no-repeat; }
+.fv-clinic{ background:url("assets/img/feature-clinic-interior.jpg") center/cover no-repeat; }
 .demo{display:grid; grid-template-columns:0.85fr 1.15fr; gap:36px; align-items:center;}
 @media (max-width:900px){ .demo{grid-template-columns:1fr;} }
 .demo-copy h2{font-family:var(--font-display); font-weight:700; font-size:clamp(26px,3vw,32px); margin-bottom:16px;}
@@ -132,15 +128,12 @@ h1 .accent{color:var(--blue);}
         <div class="feature-card">
           <h3 data-i18n="f2t">7/24 Ekibinizde</h3>
           <p data-i18n="f2d">Gece gündüz, hafta sonu ve tatil demeden WhatsApp, Instagram, Messenger ve web sitenizde çalışır.</p>
-          <div class="f-visual fv-daynight"><span class="fv-icon">🕐</span></div>
+          <div class="f-visual fv-daynight"></div>
         </div>
         <div class="feature-card">
           <h3 data-i18n="f3t">Kliniğinizi Tanır</h3>
           <p data-i18n="f3d">Doktorlarınızı, hizmetlerinizi, çalışma saatlerinizi ve fiyat politikanızı bilir.</p>
-          <div class="f-visual fv-dash">
-            <div class="rows"><span data-i18n="r1">🦷 Hizmetler</span><span data-i18n="r2">👨‍⚕️ Doktorlar</span><span data-i18n="r3">📋 Fiyat Politikası</span><span data-i18n="r4">🕐 Çalışma Saatleri</span></div>
-            <div class="map">🏥</div>
-          </div>
+          <div class="f-visual fv-clinic"></div>
         </div>
       </div>
     </div>
