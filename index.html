@@ -66,6 +66,9 @@ h1 .accent{color:var(--blue);}
 .laptop-hero-text{position:absolute; left:14px; bottom:34px; max-width:70%;}
 .laptop-hero-text p{font-size:13px; font-weight:700; color:#fff; line-height:1.25;}
 .laptop-cta{ position:absolute; left:14px; bottom:14px; background:var(--blue); color:#0b0f14; font-size:8.5px; font-weight:700; padding:5px 9px; border-radius:5px; }
+.widget-bubble{ position:absolute; right:10px; bottom:10px; display:flex; flex-direction:column; align-items:flex-end; gap:6px; }
+.widget-preview{ background:#fff; color:#141c2b; border-radius:9px 9px 2px 9px; padding:6px 9px; font-size:8px; font-weight:600; max-width:120px; line-height:1.35; box-shadow:0 6px 16px rgba(0,0,0,0.35); }
+.widget-btn{ width:30px; height:30px; border-radius:50%; background:var(--blue); color:#0b0f14; display:flex; align-items:center; justify-content:center; font-size:13px; box-shadow:0 6px 16px rgba(58,168,255,0.55); }
 </style>
 <script type="application/ld+json">
 {
@@ -185,13 +188,10 @@ h1 .accent{color:var(--blue);}
           <div class="laptop-topbar" style="color:#cfe3ea;"><span>🦷</span><span data-i18n="laptopbrand">DR. ASLAN DİŞ POLİKLİNİĞİ</span></div>
           <div class="laptop-hero-text"><p data-i18n="laptoptitle">Lefkoşa'da Güvenilir Diş Sağlığı</p></div>
           <div class="laptop-cta" data-i18n="laptopcta">HEMEN RANDEVU AL</div>
-        </div></div>
-        <div class="phone"><div class="phone-screen" style="align-items:stretch; justify-content:flex-start;">
-          <div class="phone-topbar" style="padding-bottom:4px; border-bottom:1px solid #1c2731;" data-i18n="phonebrand">DentFlow Asistan</div>
-          <div class="chat-bubble bot" style="border-radius:9px; padding:6px 8px; font-size:8px; max-width:82%; background:#1c2731; color:var(--ink-dim); align-self:flex-start; margin-top:6px;" data-i18n="pc1">Merhaba! Size nasıl yardımcı olabilirim?</div>
-          <div class="chat-bubble user" style="border-radius:9px; padding:6px 8px; font-size:8px; max-width:82%; background:var(--blue); color:#0b0f14; align-self:flex-end; font-weight:600; margin-top:6px;" data-i18n="pc2">Diş temizliği için randevu almak istiyorum.</div>
-          <div class="chat-bubble bot" style="border-radius:9px; padding:6px 8px; font-size:8px; max-width:82%; background:#1c2731; color:var(--ink-dim); align-self:flex-start; margin-top:6px;" data-i18n="pc3">Elbette! Hangi tarihlerde uygun olursunuz?</div>
-          <div class="phone-input" style="margin-top:auto; background:#1c2731; border-radius:8px; font-size:7.5px; color:var(--ink-faint); padding:6px 8px; display:flex; justify-content:space-between; align-items:center;"><span data-i18n="phoneinput">Mesajınızı yazın...</span><span>➤</span></div>
+          <div class="widget-bubble">
+            <div class="widget-preview" data-i18n="widgetpreview">Merhaba! Size nasıl yardımcı olabilirim? 👋</div>
+            <div class="widget-btn">💬</div>
+          </div>
         </div></div>
       </div>
     </div>
@@ -265,6 +265,7 @@ window.pageTranslations = {
   laptopbrand:{tr:"DR. ASLAN DİŞ POLİKLİNİĞİ", en:"DR. ASLAN DENTAL CLINIC"},
   laptoptitle:{tr:"Lefkoşa'da Güvenilir Diş Sağlığı", en:"Trusted Dental Care in Nicosia"},
   laptopcta:{tr:"HEMEN RANDEVU AL", en:"BOOK NOW"},
+  widgetpreview:{tr:"Merhaba! Size nasıl yardımcı olabilirim? 👋", en:"Hi there! How can I help you? 👋"},
   phonebrand:{tr:"DentFlow Asistan", en:"DentFlow Assistant"},
   pc1:{tr:"Merhaba! Size nasıl yardımcı olabilirim?", en:"Hello! How can I help you?"},
   pc2:{tr:"Diş temizliği için randevu almak istiyorum.", en:"I'd like to book a teeth cleaning."},
