@@ -48,7 +48,7 @@ h1 .accent{color:var(--blue);}
 @media (prefers-reduced-motion:reduce){ .bubble{animation:none;} }
 @media (max-width:520px){ .bubble{font-size:10px; max-width:110px; padding:6px 9px;} }
 .fv-icon{ display:flex; align-items:center; justify-content:center; width:100%; height:100%; font-size:38px; }
-.fv-lang{ background:linear-gradient(135deg,#123055,#1a4f8f); color:#8ecfff; }
+.fv-lang{ background:url("assets/img/language-wordcloud.jpg") center/cover no-repeat; }
 .fv-daynight{ background:linear-gradient(135deg,#0c1a2d,#123055); color:#3aa8ff; }
 .fv-dash{display:flex; padding:12px; gap:10px; height:100%;}
 .fv-dash .rows{flex:0 0 42%; display:flex; flex-direction:column; gap:7px; justify-content:center;}
@@ -125,19 +125,16 @@ h1 .accent{color:var(--blue);}
     <div class="wrap">
       <div class="features">
         <div class="feature-card">
-          <div class="f-icon">💬</div>
           <h3 data-i18n="f1t">Hastanızın Dilinde</h3>
-          <p data-i18n="f1d">Otomatik dil algılar, hastanızın kendi dilinde (TR/EN/RU) iletişim kurar.</p>
-          <div class="f-visual fv-lang"><span class="fv-icon">🌐</span></div>
+          <p data-i18n="f1d">Otomatik dil algılar, hastanızın kendi dilinde iletişim kurar.</p>
+          <div class="f-visual fv-lang"></div>
         </div>
         <div class="feature-card">
-          <div class="f-icon">🕐</div>
           <h3 data-i18n="f2t">7/24 Ekibinizde</h3>
           <p data-i18n="f2d">Gece gündüz, hafta sonu ve tatil demeden WhatsApp, Instagram, Messenger ve web sitenizde çalışır.</p>
           <div class="f-visual fv-daynight"><span class="fv-icon">🕐</span></div>
         </div>
         <div class="feature-card">
-          <div class="f-icon">🗂️</div>
           <h3 data-i18n="f3t">Kliniğinizi Tanır</h3>
           <p data-i18n="f3d">Doktorlarınızı, hizmetlerinizi, çalışma saatlerinizi ve fiyat politikanızı bilir.</p>
           <div class="f-visual fv-dash">
@@ -252,7 +249,7 @@ window.pageTranslations = {
   b4:{tr:"Ich brauche dringend einen Termin für eine Wurzelbehandlung.", en:"Ich brauche dringend einen Termin für eine Wurzelbehandlung."},
   b5:{tr:"Здравствуйте! Мне нужна консультация ортодонта.", en:"Здравствуйте! Мне нужна консультация ортодонта."},
   f1t:{tr:"Hastanızın Dilinde", en:"In Your Patient's Language"},
-  f1d:{tr:"Otomatik dil algılar, hastanızın kendi dilinde (TR/EN/RU) iletişim kurar.", en:"Automatically detects language and replies in your patient's own tongue (TR/EN/RU)."},
+  f1d:{tr:"Otomatik dil algılar, hastanızın kendi dilinde iletişim kurar.", en:"Automatically detects language and replies in your patient's own tongue."},
   f2t:{tr:"7/24 Ekibinizde", en:"On Your Team, 24/7"},
   f2d:{tr:"Gece gündüz, hafta sonu ve tatil demeden WhatsApp, Instagram, Messenger ve web sitenizde çalışır.", en:"Works day or night, weekends and holidays included, across WhatsApp, Instagram, Messenger and your website."},
   f3t:{tr:"Kliniğinizi Tanır", en:"Knows Your Clinic"},
