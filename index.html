@@ -57,7 +57,12 @@ h1 .accent{color:var(--blue);}
 .demo-copy p{color:var(--ink-dim); font-size:15px; margin-bottom:26px; max-width:400px;}
 .demo-note{display:flex; align-items:center; gap:9px; margin-top:16px; font-size:12.5px; color:var(--ink-faint);}
 .demo-note .dot{width:8px; height:8px; border-radius:50%; background:var(--blue); flex-shrink:0;}
-.demo-visual{display:flex; align-items:flex-end; gap:20px; justify-content:center;}
+.demo-visual{ position:relative; border-radius:20px; overflow:hidden; min-height:320px;
+  background:
+    radial-gradient(circle at 25% 25%, rgba(58,168,255,0.18), transparent 50%),
+    linear-gradient(160deg, rgba(15,32,56,0.55) 0%, rgba(18,48,85,0.4) 45%, rgba(12,26,45,0.6) 100%),
+    url("assets/img/laptop-clinic-exam.jpg") center 35%/cover no-repeat;
+  display:flex; align-items:flex-end; gap:20px; justify-content:center; padding:34px; }
 .laptop-hero-text{position:absolute; left:14px; bottom:34px; max-width:70%;}
 .laptop-hero-text p{font-size:13px; font-weight:700; color:#fff; line-height:1.25;}
 .laptop-cta{ position:absolute; left:14px; bottom:14px; background:var(--blue); color:#0b0f14; font-size:8.5px; font-weight:700; padding:5px 9px; border-radius:5px; }
