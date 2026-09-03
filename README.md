@@ -29,21 +29,26 @@ DentFlow's blue branding in place of RentFlow's lime-green.
 ```
 css/base.css   Shared design system (colors, layout, components)
 js/site.js     Shared TR/EN i18n + mobile nav toggle logic
-favicon.svg    Placeholder blue tooth-mark icon
-assets/img/logos/  Koby Soft + TrueGuard Labs logos (shared sibling-product assets)
+favicon.png    App-icon-style favicon, generated from the real DentFlow mark
+assets/img/logos/
+  dentflow-mark.png     Real DentFlow logo (nav, footer, product card, favicon)
+  kobysoft-mark.png     Real Koby Soft icon mark (About page)
+  kobysoft-logo.png / kobysoft-logo-white.png  Koby Soft wordmark lockups (light/dark bg)
+  trueguardlabs-logo.png  TrueGuard Labs logo (shared sibling-product asset)
 ```
 
 Each page keeps a small `<style>` block for page-specific layout (hero
 variants, page-specific components) and a `window.pageTranslations` object
 with that page's TR/EN copy, loaded before the shared `js/site.js`.
 
-## Branding — placeholder, to be swapped
+## Branding
 
-There is no real DentFlow logo file in this repo yet. The nav/footer "logo"
-is an inline SVG mark (a simple blue tooth shape) plus a text wordmark —
-swap both for the real logo once available. The blue accent
-(`--blue: #3aa8ff`, `--blue-dim: #2286e0` in `css/base.css`) is a
-placeholder; update to match the real DentFlow brand hex once provided.
+The nav/footer/favicon use the real DentFlow logo (`assets/img/logos/dentflow-mark.png`),
+clipped to a rounded-square with CSS (`border-radius` on `.logo-mark` / `.df-mark`
+in `css/base.css`) since the source PNG has a flat white background rather than
+transparency. The blue accent (`--blue: #3aa8ff`, `--blue-dim: #2286e0` in
+`css/base.css`) was picked to match the logo's ribbon color — nudge it in that
+file if you get an exact brand hex later.
 
 ## Live demo link
 
