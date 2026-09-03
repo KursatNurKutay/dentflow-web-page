@@ -120,7 +120,12 @@ section{padding:88px 0;}
 .laptop{ width:58%; background:#0e1319; border:1px solid var(--card-border); border-radius:14px 14px 4px 4px; padding:12px; position:relative; }
 .laptop::after{ content:''; position:absolute; left:-6%; right:-6%; bottom:-10px; height:10px; background:#1a2129; border-radius:0 0 8px 8px; }
 .laptop-screen{ aspect-ratio:16/11; border-radius:6px; overflow:hidden; position:relative; background:#eef1ea; color:#1a2420; padding:12px; display:flex; flex-direction:column; gap:8px; }
-.laptop-screen.tint{ background:linear-gradient(135deg,#0f2038 0%,#123055 45%,#1a4f8f 100%); color:#fff; }
+.laptop-screen.tint{
+  background:
+    linear-gradient(0deg, rgba(9,18,32,0.75) 0%, rgba(12,26,45,0.35) 55%, rgba(15,32,56,0.5) 100%),
+    url("../assets/img/laptop-clinic-exam.jpg") center 30%/cover no-repeat;
+  color:#fff;
+}
 .laptop-topbar{font-size:9.5px; color:var(--ink-faint); display:flex; align-items:center; gap:6px;}
 .laptop .chat-bubble{border-radius:9px; padding:7px 9px; font-size:9px; max-width:80%;}
 .laptop .chat-bubble.bot{background:#e3e8de; color:#1a2420; align-self:flex-start;}
