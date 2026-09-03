@@ -2,7 +2,7 @@ const sharedTranslations = {
   tagline: {tr:"DİJİTAL ASİSTANINIZ", en:"YOUR DIGITAL ASSISTANT"},
   nav1:{tr:"Ana Sayfa",en:"Home"}, nav2:{tr:"DentFlow",en:"DentFlow"},
   nav3:{tr:"Canlı Demo",en:"Live Demo"}, nav4:{tr:"Hakkımızda",en:"About"}, nav5:{tr:"İletişim",en:"Contact"},
-  foot1:{tr:"KKTC'deki diş klinikleri için geliştirilmiştir.", en:"Built for dental clinics in Northern Cyprus."},
+  foot1:{tr:"KKTC ve Türkiye'deki diş klinikleri için geliştirildi.", en:"Built for dental clinics in Northern Cyprus and Türkiye."},
   foot2:{tr:"© 2026 DentFlow. Tüm hakları saklıdır.", en:"© 2026 DentFlow. All rights reserved."},
   footKoby:{tr:"KOBY SOFT markasıdır.", en:"A KOBY SOFT brand."},
   kobyTag:{tr:"Büyüyen işletmeler için <span class=\"hl\">akıllı çözümler.</span>", en:"<span class=\"hl\">Smart solutions</span> for growing businesses."},
