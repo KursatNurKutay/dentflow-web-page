@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hakkımızda — DentFlow</title>
+<meta name="description" content="DentFlow, KOBY SOFT markası tarafından geliştirilen, KKTC diş klinikleri için özel çok kanallı dijital asistan çözümüdür.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0b0f14">
+<link rel="canonical" href="https://dentflow.com.tr/hakkimizda.html">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DentFlow">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:title" content="Hakkımızda — DentFlow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<style>
+  body{ background:var(--band); color:var(--band-ink); }
+  header{ background:rgba(11,15,20,0.92); }
+  .ahero{ padding:60px 0 70px; position:relative; overflow:hidden; }
+  .ahero::before{
+    content:''; position:absolute; inset:0; opacity:0.5; z-index:0;
+    background-image: radial-gradient(#c2cee0 1.4px, transparent 1.4px);
+    background-size:16px 16px;
+    -webkit-mask-image:radial-gradient(ellipse 60% 80% at 78% 40%, black 40%, transparent 75%);
+    mask-image:radial-gradient(ellipse 60% 80% at 78% 40%, black 40%, transparent 75%);
+  }
+  .ahero .wrap{position:relative; z-index:1;}
+  .ahero-grid{ display:grid; grid-template-columns:1.05fr 0.95fr; gap:50px; align-items:center; }
+  @media (max-width:860px){ .ahero-grid{grid-template-columns:1fr;} }
+  .ahero .eyebrow{ color:var(--kb-red); }
+  .ahero .eyebrow::before{ background:var(--kb-red); }
+  .ahero h1{ font-family:var(--font-display); font-weight:700; font-size:clamp(32px,4.4vw,50px); line-height:1.05; letter-spacing:-0.5px; margin-bottom:8px; color:var(--kb-navy); }
+  .ahero h2.sub{ font-family:var(--font-display); font-weight:600; font-size:clamp(19px,2.4vw,25px); margin-bottom:22px; color:var(--kb-navy); }
+  .ahero h2.sub .hl{ color:var(--kb-red); }
+  .rule{ width:52px; height:3px; background:var(--kb-red); margin-bottom:22px; border-radius:2px; }
+  .ahero p{ font-size:14.5px; color:var(--band-ink-soft); max-width:460px; margin-bottom:14px; line-height:1.6; }
+  .koby-mark{ display:flex; flex-direction:column; align-items:center; gap:16px; text-align:center; }
+  .koby-mark img{height:80px; width:auto;}
+  .koby-mark .tagline{ font-family:var(--font-display); font-weight:600; font-size:15px; color:var(--kb-navy); max-width:280px; }
+  .koby-mark .tagline .hl{ color:var(--kb-red); }
+  .products-head{ text-align:center; margin-bottom:34px; }
+  .products-head h2{ font-family:var(--font-display); font-weight:700; font-size:clamp(22px,2.8vw,28px); color:var(--kb-navy); }
+  .rf-name{ font-family:var(--font-display); font-weight:700; font-size:15px; letter-spacing:0.5px; color:var(--kb-navy); }
+  .tg-name{ font-family:var(--font-display); font-weight:700; font-size:15px; letter-spacing:0.5px; color:var(--kb-navy); }
+  .tg-tag{ font-size:10px; letter-spacing:1.5px; color:#4a5570; font-weight:700; }
+  .btn-link{ color:var(--kb-red); }
+  .flag-wrap{ display:flex; align-items:center; justify-content:center; }
+  .flag-wrap svg{width:64px; height:auto;}
+  .checklist li .tick{ color:var(--kb-red); }
+  .df-mark{width:26px; height:26px; flex-shrink:0;}
+</style>
+</head>
+<body class="light-page">
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="logo">
+      <svg class="logo-mark" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="24" height="24" rx="6" fill="#0d151f"/>
+        <path d="M12 4c-2.5 0-4 1.6-4 4 0 1.2.3 2 .6 3 .4 1.3.9 2.7.9 5.5 0 3-.6 5.5-1.5 6.5-.4.4-.9.3-1.1-.2C6.2 19.5 5 16 5 12.5 5 7 7.8 2 12 2Z" fill="#3aa8ff"/>
+        <path d="M12 4c2.5 0 4 1.6 4 4 0 1.2-.3 2-.6 3-.4 1.3-.9 2.7-.9 5.5 0 3 .6 5.5 1.5 6.5.4.4.9.3 1.1-.2.7-1.8 1.9-5.3 1.9-8.8 0-5.5-2.8-10.5-7-10.5Z" fill="#2286e0"/>
+      </svg>
+      <span class="logo-word" style="color:#fff;">DentFlow</span>
+    </a>
+    <nav class="links">
+      <a href="index.html" data-i18n="nav1">Ana Sayfa</a>
+      <a href="dentflow.html" data-i18n="nav2">DentFlow</a>
+      <a href="demo.html" data-i18n="nav3">Canlı Demo</a>
+      <a href="hakkimizda.html" class="active" data-i18n="nav4">Hakkımızda</a>
+      <a href="iletisim.html" data-i18n="nav5">İletişim</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang-toggle"><button id="btn-tr" class="active">TR</button><button id="btn-en">EN</button></div>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="ahero">
+    <div class="wrap ahero-grid">
+      <div>
+        <div class="eyebrow" data-i18n="eyebrow">HAKKIMIZDA</div>
+        <h1 data-i18n="h1">KOBY SOFT</h1>
+        <h2 class="sub" data-i18n="sub">Büyüyen işletmeler için <span class="hl">akıllı çözümler.</span></h2>
+        <div class="rule"></div>
+        <p data-i18n="p1">KOBY SOFT, Kuzey Kıbrıs Türk Cumhuriyeti'nde faaliyet gösteren bir yazılım ve dijital çözümler şirketidir.</p>
+        <p data-i18n="p2">İşletmelerin iletişimini kolaylaştıran, süreçlerini akıllandıran ve müşterilerine daha iyi bir deneyim sunmalarını sağlayan ürünler geliştiriyoruz.</p>
+        <p data-i18n="p3">Teknoloji ile işletmelerin büyümesine katkı sağlamak ve bölgemizde dijital dönüşümü desteklemek en temel hedefimizdir.</p>
+      </div>
+      <div class="koby-mark">
+        <img src="assets/img/logos/kobysoft-logo.png" alt="KOBY SOFT">
+        <div class="tagline">Büyüyen işletmeler için <span class="hl">akıllı çözümler.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="value-grid">
+        <div class="value-item"><div class="ico">👥</div><h4 data-i18n="v1t">İşletmelere Odaklıyız</h4><p data-i18n="v1d">Küçük, orta ve büyüyen işletmelerin gerçek ihtiyaçlarına odaklanıyoruz.</p></div>
+        <div class="value-item"><div class="ico">💡</div><h4 data-i18n="v2t">Akıllı ve Kullanışlı Çözümler</h4><p data-i18n="v2d">Karmaşık değil, kullanımı kolay ve işe yarayan çözümler geliştiriyoruz.</p></div>
+        <div class="value-item"><div class="ico">🛡️</div><h4 data-i18n="v3t">Güven ve Kalite</h4><p data-i18n="v3d">Veri güvenliğini önceliklendirir, kaliteli yazılım ve destek sunarız.</p></div>
+        <div class="value-item"><div class="ico">📈</div><h4 data-i18n="v4t">Büyümeye Katkı</h4><p data-i18n="v4d">Teknoloji ile işletmelerin büyümesine ve verimliliğine katkı sağlıyoruz.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="products-head"><h2 data-i18n="prodh">Ürünlerimiz</h2></div>
+      <div class="product-grid">
+        <div class="product-card featured">
+          <div class="mark">
+            <svg class="df-mark" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="24" height="24" rx="6" fill="#0d151f"/>
+              <path d="M12 4c-2.5 0-4 1.6-4 4 0 1.2.3 2 .6 3 .4 1.3.9 2.7.9 5.5 0 3-.6 5.5-1.5 6.5-.4.4-.9.3-1.1-.2C6.2 19.5 5 16 5 12.5 5 7 7.8 2 12 2Z" fill="#3aa8ff"/>
+              <path d="M12 4c2.5 0 4 1.6 4 4 0 1.2-.3 2-.6 3-.4 1.3-.9 2.7-.9 5.5 0 3 .6 5.5 1.5 6.5.4.4.9.3 1.1-.2.7-1.8 1.9-5.3 1.9-8.8 0-5.5-2.8-10.5-7-10.5Z" fill="#2286e0"/>
+            </svg>
+            <span class="rf-name">DENTFLOW</span>
+          </div>
+          <p class="tagline" data-i18n="dfcardtag">Diş klinikleri için çok kanallı dijital asistan.</p>
+          <p data-i18n="dfcardp">Kliniğinizde 7/24 çalışan asistanımız, hastalarınızla WhatsApp, Instagram, Messenger ve web sitenizde anında iletişim kurar, sorularını yanıtlar ve randevu fırsatlarını artırır.</p>
+          <a href="dentflow.html" class="btn-link">dentflow.com.tr →</a>
+        </div>
+        <div class="product-card">
+          <div class="mark">
+            <span class="rf-name">RENTFLOW</span>
+          </div>
+          <p class="tagline" data-i18n="rfcardtag">Araç kiralama şirketleri için akıllı dijital asistan.</p>
+          <p data-i18n="rfcardp">Web sitenizde 7/24 çalışan asistanımız, müşterilerinizle anında iletişim kurar, sorularını yanıtlar ve rezervasyon fırsatlarını artırır.</p>
+          <a href="https://rentflow.com.tr" class="btn-link" target="_blank" rel="noopener">rentflow.com.tr →</a>
+        </div>
+        <div class="product-card">
+          <div class="mark tg">
+            <img src="assets/img/logos/trueguardlabs-logo.png" alt="TrueGuard Labs">
+            <span class="tg-name">TRUEGUARD LABS</span>
+          </div>
+          <p class="tg-tag" data-i18n="tgcardtag">AI QUALITY ASSURANCE</p>
+          <p data-i18n="tgcardp">İşletmelerdeki yapay zeka çözümlerinin doğru, güvenilir ve etik çalıştığından emin olmanızı sağlıyoruz.</p>
+          <a href="https://trueguardlabs.com" class="btn-link" target="_blank" rel="noopener">trueguardlabs.com →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="checklist-banner">
+        <div class="flag-wrap">
+          <svg viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
+            <rect width="60" height="40" fill="#e30a17"/>
+            <rect x="6" y="6" width="48" height="28" fill="#fff"/>
+            <circle cx="24" cy="20" r="7" fill="#e30a17"/><circle cx="26.5" cy="20" r="5.6" fill="#fff"/>
+            <path d="M31 15.5 L32.3 19 L36 19.3 L33.2 21.6 L34.1 25.2 L31 23.2 L27.9 25.2 L28.8 21.6 L26 19.3 L29.7 19 Z" fill="#e30a17"/>
+          </svg>
+        </div>
+        <div>
+          <h3 data-i18n="bkth">KOBY SOFT Hakkında</h3>
+          <p data-i18n="bktp1">KOBY SOFT, Kuzey Kıbrıs Türk Cumhuriyeti'nde faaliyet gösteren bir yazılım ve dijital çözümler şirketidir.</p>
+          <p data-i18n="bktp2">Gerçek dünya problemlerine odaklanır, işletmelerin iletişimini güçlendiren, süreçlerini akıllandıran ve büyümelerine katkı sağlayan ürünler geliştirir. Yenilikçi, güvenilir ve sonuç odaklı yaklaşımımızla işletmelerin yanındayız.</p>
+        </div>
+        <ul class="checklist">
+          <li><span class="tick">✔</span><span data-i18n="chk1">KKTC merkezli</span></li>
+          <li><span class="tick">✔</span><span data-i18n="chk2">İşletmelere özel çözümler</span></li>
+          <li><span class="tick">✔</span><span data-i18n="chk3">Güvenilir teknoloji altyapısı</span></li>
+          <li><span class="tick">✔</span><span data-i18n="chk4">Sürekli gelişim ve destek</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap site-footer-main">
+    <div class="footer-brands">
+      <div class="footer-dentflow">
+        <svg class="logo-mark" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="24" height="24" rx="6" fill="#0d151f"/>
+          <path d="M12 4c-2.5 0-4 1.6-4 4 0 1.2.3 2 .6 3 .4 1.3.9 2.7.9 5.5 0 3-.6 5.5-1.5 6.5-.4.4-.9.3-1.1-.2C6.2 19.5 5 16 5 12.5 5 7 7.8 2 12 2Z" fill="#3aa8ff"/>
+          <path d="M12 4c2.5 0 4 1.6 4 4 0 1.2-.3 2-.6 3-.4 1.3-.9 2.7-.9 5.5 0 3 .6 5.5 1.5 6.5.4.4.9.3 1.1-.2.7-1.8 1.9-5.3 1.9-8.8 0-5.5-2.8-10.5-7-10.5Z" fill="#2286e0"/>
+        </svg>
+        <span class="logo-word">DentFlow</span>
+      </div>
+      <div class="footer-koby">
+        <img src="assets/img/logos/kobysoft-logo-white.png" alt="KOBY SOFT">
+        <p data-i18n="kobyTag">Büyüyen işletmeler için <span class="hl">akıllı çözümler.</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrap footer-row">
+      <span data-i18n="foot1">KKTC'deki diş klinikleri için geliştirilmiştir.</span>
+    </div>
+    <div class="wrap" style="margin-top:14px; display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+      <span style="font-size:11.5px; color:var(--ink-faint);" data-i18n="foot2">© 2026 DentFlow. Tüm hakları saklıdır.</span>
+      <a href="kvkk.html" style="font-size:11.5px; color:var(--ink-faint); text-decoration:underline;" data-i18n="kvkkLink">KVKK / Gizlilik Politikası</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.pageTranslations = {
+  eyebrow:{tr:"HAKKIMIZDA", en:"ABOUT US"},
+  h1:{tr:"KOBY SOFT", en:"KOBY SOFT"},
+  sub:{tr:"Büyüyen işletmeler için <span class=\"hl\">akıllı çözümler.</span>", en:"<span class=\"hl\">Smart solutions</span> for growing businesses."},
+  p1:{tr:"KOBY SOFT, Kuzey Kıbrıs Türk Cumhuriyeti'nde faaliyet gösteren bir yazılım ve dijital çözümler şirketidir.", en:"KOBY SOFT is a software and digital solutions company operating in the Turkish Republic of Northern Cyprus."},
+  p2:{tr:"İşletmelerin iletişimini kolaylaştıran, süreçlerini akıllandıran ve müşterilerine daha iyi bir deneyim sunmalarını sağlayan ürünler geliştiriyoruz.", en:"We build products that make businesses' communication easier, make their processes smarter, and help them offer their customers a better experience."},
+  p3:{tr:"Teknoloji ile işletmelerin büyümesine katkı sağlamak ve bölgemizde dijital dönüşümü desteklemek en temel hedefimizdir.", en:"Our core goal is to help businesses grow through technology and support digital transformation across our region."},
+  v1t:{tr:"İşletmelere Odaklıyız", en:"Focused on Businesses"},
+  v1d:{tr:"Küçük, orta ve büyüyen işletmelerin gerçek ihtiyaçlarına odaklanıyoruz.", en:"We focus on the real needs of small, medium and growing businesses."},
+  v2t:{tr:"Akıllı ve Kullanışlı Çözümler", en:"Smart, Usable Solutions"},
+  v2d:{tr:"Karmaşık değil, kullanımı kolay ve işe yarayan çözümler geliştiriyoruz.", en:"We build solutions that are easy to use and actually work — not complicated ones."},
+  v3t:{tr:"Güven ve Kalite", en:"Trust & Quality"},
+  v3d:{tr:"Veri güvenliğini önceliklendirir, kaliteli yazılım ve destek sunarız.", en:"We prioritize data security and deliver quality software and support."},
+  v4t:{tr:"Büyümeye Katkı", en:"Contributing to Growth"},
+  v4d:{tr:"Teknoloji ile işletmelerin büyümesine ve verimliliğine katkı sağlıyoruz.", en:"We help businesses grow and become more efficient through technology."},
+  prodh:{tr:"Ürünlerimiz", en:"Our Products"},
+  dfcardtag:{tr:"Diş klinikleri için çok kanallı dijital asistan.", en:"A multi-channel digital assistant for dental clinics."},
+  dfcardp:{tr:"Kliniğinizde 7/24 çalışan asistanımız, hastalarınızla WhatsApp, Instagram, Messenger ve web sitenizde anında iletişim kurar, sorularını yanıtlar ve randevu fırsatlarını artırır.", en:"Our assistant runs 24/7, talking with your patients instantly across WhatsApp, Instagram, Messenger and your website — answering questions and increasing booking opportunities."},
+  rfcardtag:{tr:"Araç kiralama şirketleri için akıllı dijital asistan.", en:"A smart digital assistant for car rental companies."},
+  rfcardp:{tr:"Web sitenizde 7/24 çalışan asistanımız, müşterilerinizle anında iletişim kurar, sorularını yanıtlar ve rezervasyon fırsatlarını artırır.", en:"Our assistant runs on your website 24/7, talks with your customers instantly, answers their questions, and increases booking opportunities."},
+  tgcardtag:{tr:"AI QUALITY ASSURANCE", en:"AI QUALITY ASSURANCE"},
+  tgcardp:{tr:"İşletmelerdeki yapay zeka çözümlerinin doğru, güvenilir ve etik çalıştığından emin olmanızı sağlıyoruz.", en:"We help you make sure the AI solutions in your business work accurately, reliably, and ethically."},
+  bkth:{tr:"KOBY SOFT Hakkında", en:"About KOBY SOFT"},
+  bktp1:{tr:"KOBY SOFT, Kuzey Kıbrıs Türk Cumhuriyeti'nde faaliyet gösteren bir yazılım ve dijital çözümler şirketidir.", en:"KOBY SOFT is a software and digital solutions company operating in the Turkish Republic of Northern Cyprus."},
+  bktp2:{tr:"Gerçek dünya problemlerine odaklanır, işletmelerin iletişimini güçlendiren, süreçlerini akıllandıran ve büyümelerine katkı sağlayan ürünler geliştirir. Yenilikçi, güvenilir ve sonuç odaklı yaklaşımımızla işletmelerin yanındayız.", en:"We focus on real-world problems, building products that strengthen businesses' communication, make their processes smarter, and support their growth. We stand by businesses with an innovative, reliable, results-driven approach."},
+  chk1:{tr:"KKTC merkezli", en:"Based in Northern Cyprus"},
+  chk2:{tr:"İşletmelere özel çözümler", en:"Solutions tailored to businesses"},
+  chk3:{tr:"Güvenilir teknoloji altyapısı", en:"Reliable technology infrastructure"},
+  chk4:{tr:"Sürekli gelişim ve destek", en:"Ongoing development & support"},
+  foot1:{tr:"KKTC'deki diş klinikleri için geliştirilmiştir.", en:"Built for dental clinics in Northern Cyprus."},
+  foot2:{tr:"© 2026 DentFlow. Tüm hakları saklıdır.", en:"© 2026 DentFlow. All rights reserved."}
+};
+</script>
+<script src="js/site.js"></script>
+</body>
+</html>

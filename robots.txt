@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dentflow.com.tr/sitemap.xml

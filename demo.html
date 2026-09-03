@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canlı Demo — DentFlow</title>
+<meta name="description" content="DentFlow'u gerçek bir diş kliniği web sitesinde canlı deneyin. Test kliniğimiz Dr. Aslan Diş Polikliniği üzerinde yazın veya konuşun, DentFlow'un nasıl yanıt verdiğini görün.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0b0f14">
+<link rel="canonical" href="https://dentflow.com.tr/demo.html">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DentFlow">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:title" content="Canlı Demo — DentFlow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<style>
+  .dhero{ padding:70px 0 40px; background: radial-gradient(ellipse 900px 500px at 85% 10%, rgba(58,168,255,0.1), transparent 60%), linear-gradient(180deg, #0b0f14 0%, #0d131a 100%); }
+  .dhero-grid{ display:grid; grid-template-columns:1fr 1.1fr; gap:56px; align-items:center; }
+  @media (max-width:900px){ .dhero-grid{grid-template-columns:1fr;} }
+  .dhero h1{ font-family:var(--font-display); font-weight:700; font-size:clamp(30px,4vw,44px); line-height:1.08; margin-bottom:18px; }
+  .dhero h1 .blue{color:var(--blue);}
+  .dhero p.lead{ font-size:15px; color:var(--ink-dim); max-width:420px; margin-bottom:26px; }
+  .dcheck{display:flex; flex-direction:column; gap:14px;}
+  .dcheck li{ list-style:none; display:flex; align-items:flex-start; gap:12px; font-size:14px; color:var(--ink); padding-bottom:14px; border-bottom:1px solid var(--card-border); }
+  .dcheck li:last-child{border-bottom:none; padding-bottom:0;}
+  .dcheck .tick{ width:22px; height:22px; border-radius:50%; background:rgba(58,168,255,0.12); color:var(--blue); display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:12px; }
+  .demo-frame{ position:relative; border-radius:20px; overflow:hidden; min-height:320px;
+    background: radial-gradient(circle at 25% 25%, rgba(58,168,255,0.3), transparent 50%), linear-gradient(160deg, #0f2038 0%, #123055 45%, #0c1a2d 100%);
+    display:flex; align-items:flex-end; justify-content:center; padding:34px; gap:22px; }
+  .demo-frame .laptop{width:60%;}
+  .demo-frame .phone{width:24%;}
+  .clinic-card{ background:var(--card); border:1px solid var(--card-border); border-radius:18px; padding:32px; display:flex; align-items:center; gap:26px; }
+  @media (max-width:700px){ .clinic-card{flex-direction:column; align-items:flex-start; text-align:left;} }
+  .cc-badge{ width:64px; height:64px; border-radius:50%; background:#0d2a3d; color:#7fd0e8; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:26px; border:1px solid rgba(127,208,232,0.3); }
+  .clinic-card h3{font-family:var(--font-display); font-size:17px; font-weight:600; margin-bottom:6px;}
+  .clinic-card p{font-size:13.5px; color:var(--ink-dim); line-height:1.6;}
+  .cta-wrap{ text-align:center; margin:44px 0 18px; }
+  .btn-huge{ display:inline-flex; align-items:center; gap:12px; background:var(--blue); color:#0b0f14; font-weight:700; font-size:17px; padding:19px 40px; border-radius:12px; }
+  .btn-huge:hover{ background:#5fbaff; }
+  .cta-note{ font-size:12.5px; color:var(--ink-faint); margin-top:12px; }
+  .support-grid{ display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:30px; }
+  @media (max-width:700px){ .support-grid{grid-template-columns:1fr;} }
+  .support-card{ background:var(--card); border:1px solid var(--card-border); border-radius:14px; padding:22px; display:flex; gap:14px; align-items:flex-start; }
+  .support-card .ico{ width:38px; height:38px; border-radius:10px; background:rgba(58,168,255,0.1); color:var(--blue); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  .support-card p{font-size:13.5px; color:var(--ink-dim); line-height:1.5;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="logo">
+      <svg class="logo-mark" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="24" height="24" rx="6" fill="#0d151f"/>
+        <path d="M12 4c-2.5 0-4 1.6-4 4 0 1.2.3 2 .6 3 .4 1.3.9 2.7.9 5.5 0 3-.6 5.5-1.5 6.5-.4.4-.9.3-1.1-.2C6.2 19.5 5 16 5 12.5 5 7 7.8 2 12 2Z" fill="#3aa8ff"/>
+        <path d="M12 4c2.5 0 4 1.6 4 4 0 1.2-.3 2-.6 3-.4 1.3-.9 2.7-.9 5.5 0 3 .6 5.5 1.5 6.5.4.4.9.3 1.1-.2.7-1.8 1.9-5.3 1.9-8.8 0-5.5-2.8-10.5-7-10.5Z" fill="#2286e0"/>
+      </svg>
+      <span class="logo-word">DentFlow</span>
+    </a>
+    <nav class="links">
+      <a href="index.html" data-i18n="nav1">Ana Sayfa</a>
+      <a href="dentflow.html" data-i18n="nav2">DentFlow</a>
+      <a href="demo.html" class="active" data-i18n="nav3">Canlı Demo</a>
+      <a href="hakkimizda.html" data-i18n="nav4">Hakkımızda</a>
+      <a href="iletisim.html" data-i18n="nav5">İletişim</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang-toggle"><button id="btn-tr" class="active">TR</button><button id="btn-en">EN</button></div>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="dhero">
+    <div class="wrap dhero-grid">
+      <div>
+        <div class="eyebrow" data-i18n="eyebrow">CANLI DEMO</div>
+        <h1><span data-i18n="h1a">DentFlow'u</span> <span class="blue" data-i18n="h1b">Canlı Deneyin</span></h1>
+        <p class="lead" data-i18n="lead">DentFlow'un gerçek bir diş kliniği web sitesinde nasıl çalıştığını görün.</p>
+        <ul class="dcheck">
+          <li><span class="tick">✓</span><span data-i18n="c1">Gerçek bir klinik web sitesinde çalışır</span></li>
+          <li><span class="tick">✓</span><span data-i18n="c2">Doğal sohbet ile anında yanıtlar verir</span></li>
+          <li><span class="tick">✓</span><span data-i18n="c3">Yazın veya konuşun, asistanınız yardımcı olsun</span></li>
+        </ul>
+      </div>
+      <div class="demo-frame">
+        <div class="laptop"><div class="laptop-screen tint">
+          <div class="laptop-topbar" style="color:#cfe3ea;"><span>🦷</span><span data-i18n="lb1">DR. ASLAN DİŞ POLİKLİNİĞİ</span></div>
+          <div class="laptop-hero-text" style="position:absolute; left:14px; bottom:14px; max-width:80%;"><p style="font-size:13px; font-weight:700; color:#fff; line-height:1.25;" data-i18n="lb2">Lefkoşa'da güvenilir diş sağlığı</p></div>
+        </div></div>
+        <div class="phone"><div class="phone-screen">
+          <div class="phone-orb">🦷</div>
+          <div class="phone-sub" data-i18n="lb3">DentFlow Asistan<br>7/24 hizmetinizde</div>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:10px;">
+    <div class="wrap">
+      <div class="clinic-card">
+        <div class="cc-badge">🦷</div>
+        <div>
+          <h3 data-i18n="cch">Dr. Aslan Diş Polikliniği</h3>
+          <p data-i18n="ccp">Dr. Aslan Diş Polikliniği, DentFlow'u gerçek bir hasta gibi deneyebilmeniz için seçtiğimiz test kliniğimizdir. Lefkoşa'nın Köşklüçiftlik semtinde genel diş hekimliği, ortodonti ve ağız-çene cerrahisi alanlarında hizmet veren, çok dilli bir klinik.</p>
+        </div>
+      </div>
+
+      <div class="cta-wrap">
+        <a href="https://draslandis-demo.testsitehub.com" target="_blank" rel="noopener" class="btn-huge">
+          ↗ <span data-i18n="ctabtn">CANLI DEMOYU AÇ</span> →
+        </a>
+        <p class="cta-note" data-i18n="ctanote">Demo sitesi yeni bir sekmede açılacaktır.</p>
+      </div>
+
+      <div class="support-grid">
+        <div class="support-card"><div class="ico">💬</div><p data-i18n="sc1">Asistana gerçek bir hasta gibi sorunuzu sorun.</p></div>
+        <div class="support-card"><div class="ico">🎙️</div><p data-i18n="sc2">Yazabilir veya konuşabilirsiniz. O, size yardımcı olmak için burada.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap site-footer-main">
+    <div class="footer-brands">
+      <div class="footer-dentflow">
+        <svg class="logo-mark" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="24" height="24" rx="6" fill="#0d151f"/>
+          <path d="M12 4c-2.5 0-4 1.6-4 4 0 1.2.3 2 .6 3 .4 1.3.9 2.7.9 5.5 0 3-.6 5.5-1.5 6.5-.4.4-.9.3-1.1-.2C6.2 19.5 5 16 5 12.5 5 7 7.8 2 12 2Z" fill="#3aa8ff"/>
+          <path d="M12 4c2.5 0 4 1.6 4 4 0 1.2-.3 2-.6 3-.4 1.3-.9 2.7-.9 5.5 0 3 .6 5.5 1.5 6.5.4.4.9.3 1.1-.2.7-1.8 1.9-5.3 1.9-8.8 0-5.5-2.8-10.5-7-10.5Z" fill="#2286e0"/>
+        </svg>
+        <span class="logo-word">DentFlow</span>
+      </div>
+      <div class="footer-koby">
+        <img src="assets/img/logos/kobysoft-logo-white.png" alt="KOBY SOFT">
+        <p data-i18n="kobyTag">Büyüyen işletmeler için <span class="hl">akıllı çözümler.</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrap footer-row">
+      <span data-i18n="foot1">KKTC'deki diş klinikleri için geliştirilmiştir.</span>
+    </div>
+    <div class="wrap" style="margin-top:14px; display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+      <span style="font-size:11.5px; color:var(--ink-faint);" data-i18n="foot2">© 2026 DentFlow. Tüm hakları saklıdır.</span>
+      <a href="kvkk.html" style="font-size:11.5px; color:var(--ink-faint); text-decoration:underline;" data-i18n="kvkkLink">KVKK / Gizlilik Politikası</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.pageTranslations = {
+  eyebrow:{tr:"CANLI DEMO", en:"LIVE DEMO"},
+  h1a:{tr:"DentFlow'u", en:"Try DentFlow"}, h1b:{tr:"Canlı Deneyin", en:"Live"},
+  lead:{tr:"DentFlow'un gerçek bir diş kliniği web sitesinde nasıl çalıştığını görün.", en:"See how DentFlow works on a real dental clinic website."},
+  c1:{tr:"Gerçek bir klinik web sitesinde çalışır", en:"Runs on a real clinic website"},
+  c2:{tr:"Doğal sohbet ile anında yanıtlar verir", en:"Gives instant answers through natural conversation"},
+  c3:{tr:"Yazın veya konuşun, asistanınız yardımcı olsun", en:"Type or talk — your assistant is there to help"},
+  lb1:{tr:"DR. ASLAN DİŞ POLİKLİNİĞİ", en:"DR. ASLAN DENTAL CLINIC"},
+  lb2:{tr:"Lefkoşa'da güvenilir diş sağlığı", en:"Trusted dental care in Nicosia"},
+  lb3:{tr:"DentFlow Asistan<br>7/24 hizmetinizde", en:"DentFlow Assistant<br>On duty 24/7"},
+  cch:{tr:"Dr. Aslan Diş Polikliniği", en:"Dr. Aslan Dental Clinic"},
+  ccp:{tr:"Dr. Aslan Diş Polikliniği, DentFlow'u gerçek bir hasta gibi deneyebilmeniz için seçtiğimiz test kliniğimizdir. Lefkoşa'nın Köşklüçiftlik semtinde genel diş hekimliği, ortodonti ve ağız-çene cerrahisi alanlarında hizmet veren, çok dilli bir klinik.", en:"Dr. Aslan Dental Clinic is the test clinic we chose so you can try DentFlow the way a real patient would. Based in the Köşklüçiftlik area of Nicosia, it offers general dentistry, orthodontics and oral & maxillofacial surgery, and serves patients in multiple languages."},
+  ctabtn:{tr:"CANLI DEMOYU AÇ", en:"OPEN THE LIVE DEMO"},
+  ctanote:{tr:"Demo sitesi yeni bir sekmede açılacaktır.", en:"The demo site will open in a new tab."},
+  sc1:{tr:"Asistana gerçek bir hasta gibi sorunuzu sorun.", en:"Ask the assistant your question like a real patient would."},
+  sc2:{tr:"Yazabilir veya konuşabilirsiniz. O, size yardımcı olmak için burada.", en:"You can type or talk. It's there to help."},
+  foot1:{tr:"KKTC'deki diş klinikleri için geliştirilmiştir.", en:"Built for dental clinics in Northern Cyprus."},
+  foot2:{tr:"© 2026 DentFlow. Tüm hakları saklıdır.", en:"© 2026 DentFlow. All rights reserved."}
+};
+</script>
+<script src="js/site.js"></script>
+</body>
+</html>
