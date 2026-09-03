@@ -35,7 +35,10 @@ h1 .accent{color:var(--blue);}
 .hero-visual{ position:relative; width:100%; aspect-ratio:1/1; max-width:480px; margin-left:auto; }
 @media (max-width:900px){ .hero-visual{margin:0 auto;} }
 .chat-scene{ position:absolute; inset:0; border-radius:28px; overflow:hidden;
-  background: radial-gradient(circle at 30% 25%, rgba(58,168,255,0.25), transparent 45%), linear-gradient(155deg, #0f2038 0%, #123055 40%, #0c1a2d 100%); }
+  background:
+    radial-gradient(circle at 30% 25%, rgba(58,168,255,0.22), transparent 45%),
+    linear-gradient(155deg, rgba(15,32,56,0.55) 0%, rgba(18,48,85,0.4) 40%, rgba(12,26,45,0.65) 100%),
+    url("assets/img/hero-dentist-patient.jpg") center 42%/cover no-repeat; }
 .orb{ position:absolute; left:50%; top:38%; transform:translate(-50%,-50%); width:64px; height:64px; border-radius:50%;
   background:radial-gradient(circle at 35% 30%, #8ecfff, #1f7fe0 70%); display:flex; align-items:center; justify-content:center;
   box-shadow:0 0 0 6px rgba(58,168,255,0.14), 0 0 30px rgba(58,168,255,0.5); z-index:5; animation:pulse 2.6s ease-in-out infinite; }
