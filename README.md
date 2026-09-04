@@ -71,3 +71,9 @@ the HTML files if this URL changes.
    once purchased.
 
 No environment variables, no Railway, no server.
+
+## TODO
+
+- Review the site (privacy notice, cookie/consent handling for GTM, data
+  collection language) for UK/EU law conformance (GDPR / UK GDPR), not just
+  Turkish KVKK.
