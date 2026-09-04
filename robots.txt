@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dentflow.com.tr/sitemap.xml
+Sitemap: https://dentflowclinic.com/sitemap.xml
