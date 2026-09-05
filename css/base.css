@@ -109,7 +109,7 @@ section{padding:88px 0;}
 .checklist li{display:flex; align-items:center; gap:10px; font-size:13.5px; font-weight:600;}
 .checklist li .tick{color:var(--kb-red); flex-shrink:0;}
 
-.icon-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:22px;}
+.icon-grid{display:grid; grid-template-columns:repeat(4,1fr); grid-auto-flow:dense; gap:22px;}
 @media (max-width:900px){ .icon-grid{grid-template-columns:repeat(2,1fr);} }
 @media (max-width:520px){ .icon-grid{grid-template-columns:1fr;} }
 .icon-card{
@@ -130,6 +130,13 @@ section{padding:88px 0;}
 }
 .icon-card .circle svg{ width:26px; height:26px; }
 .icon-card h4{font-size:14.5px; font-weight:700; line-height:1.35; color:#141c2b;}
+.icon-card.wide{ grid-column:span 2; flex-direction:row; text-align:left; align-items:center; justify-content:flex-start; gap:24px; padding:30px 32px; }
+.icon-card.wide .circle{ width:64px; height:64px; border-radius:18px; }
+.icon-card.wide .circle svg{ width:30px; height:30px; }
+.icon-card.wide h4{ font-size:16.5px; }
+@media (max-width:520px){
+  .icon-card.wide{ flex-direction:column; text-align:center; padding:32px 22px; }
+}
 @media (prefers-reduced-motion:reduce){
   .icon-card{ transition:none; opacity:1; transform:none; }
 }
