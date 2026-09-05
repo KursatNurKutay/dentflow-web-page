@@ -62,6 +62,22 @@ https://draslandis-demo.testsitehub.com
 `dentflow-demo-site` repo). Search `draslandis-demo.testsitehub.com` across
 the HTML files if this URL changes.
 
+## Contact form
+
+`iletisim.html`'s form posts to `api/contact.js`, a Vercel serverless
+function that sends the message to `info@dentflowclinic.com` via the
+[Resend](https://resend.com) API (plain `fetch` call, no npm dependency).
+Requires:
+
+1. A Resend account with `dentflowclinic.com` verified as a sending domain
+   (a couple of DNS records, same place as the site's other DNS).
+2. A `RESEND_API_KEY` environment variable set in Vercel
+   (**Project → Settings → Environment Variables**).
+
+If the function isn't configured (or the request fails for any reason),
+the form's JS falls back to a `mailto:` link so the message is never
+silently lost.
+
 ## Deploying
 
 1. Push this repo to GitHub.
@@ -69,8 +85,11 @@ the HTML files if this URL changes.
 3. Framework preset: **Other**. No build command or output directory needed.
 4. Deploy, then attach the real domain under **Project → Settings → Domains**
    once purchased.
+5. Add the `RESEND_API_KEY` environment variable (see "Contact form" above)
+   for the contact form to actually send email.
 
-No environment variables, no Railway, no server.
+No Railway, no separate server — just Vercel's static hosting plus the one
+serverless function above.
 
 ## TODO
 
