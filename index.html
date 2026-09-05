@@ -106,6 +106,25 @@ h1 .accent{color:var(--blue);}
 .channel-step-num{ font-family:var(--font-display); font-size:13px; font-weight:700; color:var(--blue); margin-bottom:10px; letter-spacing:0.5px; }
 .channel-step h3{ font-family:var(--font-display); font-size:clamp(22px,2.6vw,28px); font-weight:700; margin-bottom:10px; }
 .channel-step p{ color:var(--ink-dim); font-size:15px; max-width:420px; line-height:1.6; }
+
+.compare-grid{ display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:44px; }
+@media (max-width:800px){ .compare-grid{grid-template-columns:1fr;} }
+.compare-col{ border-radius:20px; padding:32px 30px; border:1px solid var(--card-border); }
+.compare-col.without{ background:#fbfafa; }
+.compare-col.with{ background:linear-gradient(165deg, rgba(58,168,255,0.06), rgba(58,168,255,0.01)); border-color:rgba(58,168,255,0.3); box-shadow:0 24px 50px -34px rgba(58,168,255,0.35); }
+.compare-head{ display:flex; align-items:center; gap:12px; font-family:var(--font-display); font-weight:700; font-size:16px; margin-bottom:22px; }
+.compare-badge{ width:30px; height:30px; border-radius:9px; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:800; flex-shrink:0; }
+.without .compare-badge{ background:#f1e4e4; color:#b3564f; }
+.with .compare-badge{ background:var(--blue); color:#0b0f14; }
+.compare-col ul{ display:flex; flex-direction:column; gap:16px; }
+.compare-col li{ font-size:14.5px; line-height:1.5; padding-left:22px; position:relative; color:var(--ink-dim); }
+.without li::before{ content:'–'; position:absolute; left:0; color:#b3564f; font-weight:700; }
+.with li{ color:var(--ink); font-weight:500; }
+.with li::before{ content:'✓'; position:absolute; left:0; color:var(--blue); font-weight:700; }
+.stats-row{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:44px; text-align:center; }
+@media (max-width:640px){ .stats-row{grid-template-columns:1fr; gap:28px;} }
+.stat-num{ font-family:var(--font-display); font-weight:700; font-size:clamp(38px,5vw,52px); color:var(--blue); line-height:1; margin-bottom:8px; }
+.stat-label{ font-size:14px; color:var(--ink-dim); font-weight:600; }
 </style>
 <script type="application/ld+json">
 {
@@ -249,6 +268,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  <section class="compare-section">
+    <div class="wrap">
+      <div class="section-head center">
+        <h2 data-i18n="cmph">DentFlow <span class="blue">Farkı</span></h2>
+        <p data-i18n="cmpp">Aynı klinik, aynı hastalar — tek fark, kim yanıt veriyor.</p>
+      </div>
+      <div class="compare-grid">
+        <div class="compare-col without">
+          <div class="compare-head"><span class="compare-badge">✕</span><span data-i18n="cmpw0">DentFlow Olmadan</span></div>
+          <ul>
+            <li data-i18n="cmpw1">Kaçırılan aramalar ve mesajlar</li>
+            <li data-i18n="cmpw2">Yavaş, saatler süren dönüşler</li>
+            <li data-i18n="cmpw3">Dil bariyeri nedeniyle kaybedilen hastalar</li>
+            <li data-i18n="cmpw4">Resepsiyonun tekrarlayan sorularla boğulması</li>
+          </ul>
+        </div>
+        <div class="compare-col with">
+          <div class="compare-head"><span class="compare-badge">✓</span><span data-i18n="cmpi0">DentFlow İle</span></div>
+          <ul>
+            <li data-i18n="cmpi1">7/24 kesintisiz yanıt</li>
+            <li data-i18n="cmpi2">Anında, doğal dilde yanıt</li>
+            <li data-i18n="cmpi3">Otomatik çoklu dil algılama</li>
+            <li data-i18n="cmpi4">Rutin soruları otomatik yanıtlar</li>
+          </ul>
+        </div>
+      </div>
+      <div class="stats-row">
+        <div class="stat-tile"><div class="stat-num" data-count="16">0</div><div class="stat-label" data-i18n="stat1">Güçlü Özellik</div></div>
+        <div class="stat-tile"><div class="stat-num" data-count="4">0</div><div class="stat-label" data-i18n="stat2">İletişim Kanalı</div></div>
+        <div class="stat-tile"><div class="stat-num" data-count="30">0</div><div class="stat-label" data-i18n="stat3">Gün Veri Saklama</div></div>
+      </div>
+    </div>
+  </section>
+
   <section>
     <div class="wrap">
       <div class="band">
@@ -379,6 +432,21 @@ window.pageTranslations = {
   t4t:{tr:"Daha Fazla Mutlu Hasta", en:"Happier Patients"}, t4d:{tr:"Hızlı, doğru ve kolay iletişim hasta memnuniyetini artırır.", en:"Fast, accurate, easy communication boosts patient satisfaction."},
   foot1:{tr:"KKTC ve Türkiye'deki diş klinikleri için geliştirildi.", en:"Built for dental clinics in Northern Cyprus and Türkiye."},
   foot2:{tr:"© 2026 DentFlow. Tüm hakları saklıdır.", en:"© 2026 DentFlow. All rights reserved."},
+  cmph:{tr:"DentFlow <span class=\"blue\">Farkı</span>", en:"The DentFlow <span class=\"blue\">Difference</span>"},
+  cmpp:{tr:"Aynı klinik, aynı hastalar — tek fark, kim yanıt veriyor.", en:"Same clinic, same patients — the only difference is who answers."},
+  cmpw0:{tr:"DentFlow Olmadan", en:"Without DentFlow"},
+  cmpw1:{tr:"Kaçırılan aramalar ve mesajlar", en:"Missed calls and messages"},
+  cmpw2:{tr:"Yavaş, saatler süren dönüşler", en:"Slow replies that take hours"},
+  cmpw3:{tr:"Dil bariyeri nedeniyle kaybedilen hastalar", en:"Patients lost to the language barrier"},
+  cmpw4:{tr:"Resepsiyonun tekrarlayan sorularla boğulması", en:"Reception overwhelmed by repetitive questions"},
+  cmpi0:{tr:"DentFlow İle", en:"With DentFlow"},
+  cmpi1:{tr:"7/24 kesintisiz yanıt", en:"24/7 uninterrupted response"},
+  cmpi2:{tr:"Anında, doğal dilde yanıt", en:"Instant replies in natural language"},
+  cmpi3:{tr:"Otomatik çoklu dil algılama", en:"Automatic multi-language detection"},
+  cmpi4:{tr:"Rutin soruları otomatik yanıtlar", en:"Handles routine questions automatically"},
+  stat1:{tr:"Güçlü Özellik", en:"Powerful Features"},
+  stat2:{tr:"İletişim Kanalı", en:"Communication Channels"},
+  stat3:{tr:"Gün Veri Saklama", en:"Days of Data Retention"},
   csh:{tr:"Tek Asistan, <span class=\"blue\">Dört Kanal</span>", en:"One Assistant, <span class=\"blue\">Four Channels</span>"},
   csp:{tr:"DentFlow her kanalda aynı bilgiyle, aynı özenle yanıtlar — hastanız nereden yazarsa yazsın.", en:"DentFlow answers with the same knowledge and care on every channel — wherever your patient reaches out from."},
   cbweb:{tr:"Web Sitesi Widget'ı", en:"Website Widget"},
@@ -424,6 +492,30 @@ window.pageTranslations = {
     });
   }, { threshold: 0.5, rootMargin: '-15% 0px -15% 0px' });
   steps.forEach(function(s){ observer.observe(s); });
+})();
+(function(){
+  var nums = document.querySelectorAll('.stat-num[data-count]');
+  if(!nums.length) return;
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function animate(el){
+    var target = parseInt(el.dataset.count, 10);
+    if(reduceMotion || !('IntersectionObserver' in window)){ el.textContent = target; return; }
+    var duration = 1100, start = null;
+    function step(ts){
+      if(start === null) start = ts;
+      var progress = Math.min((ts - start) / duration, 1);
+      el.textContent = Math.round(progress * target);
+      if(progress < 1){ requestAnimationFrame(step); }
+    }
+    requestAnimationFrame(step);
+  }
+  if(!('IntersectionObserver' in window)){ nums.forEach(function(n){ n.textContent = n.dataset.count; }); return; }
+  var statObserver = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){ animate(entry.target); statObserver.unobserve(entry.target); }
+    });
+  }, { threshold: 0.6 });
+  nums.forEach(function(n){ statObserver.observe(n); });
 })();
 </script>
 </body>
