@@ -35,8 +35,8 @@ module.exports = async (req, res) => {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        from: 'DentFlow Web Sitesi <contact@dentflowclinic.com>',
-        to: ['info@dentflowclinic.com'],
+        from: 'DentFlow Web Sitesi <contact@kobysoft.app>',
+        to: ['info@kobysoft.app'],
         reply_to: email,
         subject: `[DentFlow İletişim] ${subject}`,
         text: `Ad Soyad: ${name}\nE-posta: ${email}\nKonu: ${subject}\n\n${message}`

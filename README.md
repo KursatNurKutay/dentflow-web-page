@@ -65,14 +65,19 @@ the HTML files if this URL changes.
 ## Contact form
 
 `iletisim.html`'s form posts to `api/contact.js`, a Vercel serverless
-function that sends the message to `info@dentflowclinic.com` via the
-[Resend](https://resend.com) API (plain `fetch` call, no npm dependency).
-Requires:
+function that sends the message to `info@kobysoft.app` (the only mailbox
+that actually exists — `dentflowclinic.com` has no email hosting) via the
+[Resend](https://resend.com) API (plain `fetch` call, no npm dependency),
+sending from `contact@kobysoft.app` since `kobysoft.app` is the domain
+already verified in Resend. Requires:
 
-1. A Resend account with `dentflowclinic.com` verified as a sending domain
-   (a couple of DNS records, same place as the site's other DNS).
+1. `kobysoft.app` verified as a sending domain in Resend (already done).
 2. A `RESEND_API_KEY` environment variable set in Vercel
    (**Project → Settings → Environment Variables**).
+
+Every visible contact email on the site (quick-actions, contact details,
+KVKK notice, footer, JSON-LD) also points to `info@kobysoft.app` for the
+same reason.
 
 If the function isn't configured (or the request fails for any reason),
 the form's JS falls back to a `mailto:` link so the message is never
