@@ -109,6 +109,19 @@ section{padding:88px 0;}
 .checklist li{display:flex; align-items:center; gap:10px; font-size:13.5px; font-weight:600;}
 .checklist li .tick{color:var(--kb-red); flex-shrink:0;}
 
+.reveal{ opacity:0; transform:translateY(22px); transition:opacity .6s ease, transform .6s ease; }
+.reveal.is-visible{ opacity:1; transform:translateY(0); }
+@media (prefers-reduced-motion:reduce){ .reveal{ transition:none; opacity:1; transform:none; } }
+
+.glow{ position:relative; overflow:hidden; }
+.glow::before{
+  content:''; position:absolute; inset:0; z-index:0; pointer-events:none; border-radius:inherit;
+  background:radial-gradient(320px circle at var(--gx,50%) var(--gy,50%), rgba(58,168,255,0.28), transparent 70%);
+  opacity:0; transition:opacity .3s ease;
+}
+.glow:hover::before{ opacity:1; }
+.glow > *{ position:relative; z-index:1; }
+
 .icon-grid{display:grid; grid-template-columns:repeat(4,1fr); grid-auto-flow:dense; gap:22px;}
 @media (max-width:900px){ .icon-grid{grid-template-columns:repeat(2,1fr);} }
 @media (max-width:520px){ .icon-grid{grid-template-columns:1fr;} }

@@ -56,5 +56,48 @@ function initMobileMenu(){
   });
 }
 
+function initReveal(){
+  const els = document.querySelectorAll('.reveal');
+  if(!els.length) return;
+  const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduceMotion || !('IntersectionObserver' in window)){
+    els.forEach(el => el.classList.add('is-visible'));
+    return;
+  }
+  const groups = new Map();
+  els.forEach(el => {
+    const parent = el.parentElement;
+    if(!groups.has(parent)) groups.set(parent, []);
+    groups.get(parent).push(el);
+  });
+  groups.forEach(list => {
+    list.forEach((el, idx) => { el.style.transitionDelay = Math.min(idx, 5) * 80 + 'ms'; });
+  });
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  els.forEach(el => observer.observe(el));
+}
+
+function initGlow(){
+  const els = document.querySelectorAll('.glow');
+  if(!els.length) return;
+  if(window.matchMedia && window.matchMedia('(hover: none)').matches) return;
+  els.forEach(el => {
+    el.addEventListener('mousemove', e => {
+      const r = el.getBoundingClientRect();
+      el.style.setProperty('--gx', ((e.clientX - r.left) / r.width * 100) + '%');
+      el.style.setProperty('--gy', ((e.clientY - r.top) / r.height * 100) + '%');
+    });
+  });
+}
+
 document.addEventListener('DOMContentLoaded', initI18n);
 document.addEventListener('DOMContentLoaded', initMobileMenu);
+document.addEventListener('DOMContentLoaded', initReveal);
+document.addEventListener('DOMContentLoaded', initGlow);
