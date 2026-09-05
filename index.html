@@ -76,6 +76,36 @@ h1 .accent{color:var(--blue);}
 .widget-bubble{ position:absolute; right:10px; bottom:10px; display:flex; flex-direction:column; align-items:flex-end; gap:6px; }
 .widget-preview{ background:#fff; color:#141c2b; border-radius:9px 9px 2px 9px; padding:6px 9px; font-size:8px; font-weight:600; max-width:120px; line-height:1.35; box-shadow:0 6px 16px rgba(0,0,0,0.35); }
 .widget-btn{ width:30px; height:30px; border-radius:50%; background:var(--blue); color:#0b0f14; display:flex; align-items:center; justify-content:center; font-size:13px; box-shadow:0 6px 16px rgba(58,168,255,0.55); }
+
+.channel-grid{ display:grid; grid-template-columns:0.85fr 1.15fr; gap:60px; margin-top:50px; }
+@media (max-width:900px){ .channel-grid{grid-template-columns:1fr; gap:0;} }
+.channel-visual-wrap{ position:sticky; top:100px; align-self:start; }
+@media (max-width:900px){ .channel-visual-wrap{ position:static; margin-bottom:24px; } }
+.channel-device{ position:relative; aspect-ratio:3/4; max-width:320px; margin:0 auto; border-radius:28px; background:#0e1319; border:1px solid #22303c; padding:14px; box-shadow:0 30px 60px -30px rgba(0,0,0,0.5); }
+.channel-panel{ position:absolute; inset:14px; border-radius:18px; background:#101820; padding:20px 18px; display:flex; flex-direction:column; gap:10px; opacity:0; transition:opacity .4s ease; pointer-events:none; }
+.channel-panel.active{ opacity:1; pointer-events:auto; }
+.channel-panel-head{ display:flex; align-items:center; gap:9px; font-size:11.5px; font-weight:700; color:#a9b6c0; margin-bottom:4px; }
+.channel-panel-head .badge{ width:28px; height:28px; border-radius:9px; display:flex; align-items:center; justify-content:center; font-size:13px; flex-shrink:0; }
+.chat-msg{ border-radius:11px; padding:9px 13px; font-size:12px; max-width:85%; line-height:1.4; }
+.chat-msg.bot{ background:#1b2530; color:#dfe7ee; align-self:flex-start; }
+.chat-msg.user{ background:var(--blue); color:#0b0f14; align-self:flex-end; font-weight:600; }
+.voice-wave{ display:flex; align-items:center; justify-content:center; gap:4px; height:36px; margin:2px 0; }
+.voice-wave span{ width:3px; border-radius:2px; background:var(--blue); animation:wave 1.1s ease-in-out infinite; }
+.voice-wave span:nth-child(1){height:12px; animation-delay:0s;}
+.voice-wave span:nth-child(2){height:24px; animation-delay:0.1s;}
+.voice-wave span:nth-child(3){height:34px; animation-delay:0.2s;}
+.voice-wave span:nth-child(4){height:20px; animation-delay:0.3s;}
+.voice-wave span:nth-child(5){height:14px; animation-delay:0.4s;}
+@keyframes wave{ 0%,100%{transform:scaleY(0.5);} 50%{transform:scaleY(1);} }
+@media (prefers-reduced-motion:reduce){ .voice-wave span{animation:none;} }
+.channel-steps{ display:flex; flex-direction:column; }
+.channel-step{ min-height:56vh; display:flex; flex-direction:column; justify-content:center; padding:20px 0; opacity:0.32; transition:opacity .35s ease; }
+.channel-step.active{ opacity:1; }
+.channel-step:last-child{ min-height:30vh; }
+@media (max-width:900px){ .channel-step{ min-height:0; opacity:1; padding:18px 0; } }
+.channel-step-num{ font-family:var(--font-display); font-size:13px; font-weight:700; color:var(--blue); margin-bottom:10px; letter-spacing:0.5px; }
+.channel-step h3{ font-family:var(--font-display); font-size:clamp(22px,2.6vw,28px); font-weight:700; margin-bottom:10px; }
+.channel-step p{ color:var(--ink-dim); font-size:15px; max-width:420px; line-height:1.6; }
 </style>
 <script type="application/ld+json">
 {
@@ -152,6 +182,68 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3 data-i18n="f3t">Kliniğinizi Tanır</h3>
           <p data-i18n="f3d">Doktorlarınızı, hizmetlerinizi, çalışma saatlerinizi ve fiyat politikanızı bilir.</p>
           <div class="f-visual fv-clinic"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="channel-story">
+    <div class="wrap">
+      <div class="section-head center">
+        <h2 data-i18n="csh">Tek Asistan, <span class="blue">Dört Kanal</span></h2>
+        <p data-i18n="csp">DentFlow her kanalda aynı bilgiyle, aynı özenle yanıtlar — hastanız nereden yazarsa yazsın.</p>
+      </div>
+      <div class="channel-grid">
+        <div class="channel-visual-wrap">
+          <div class="channel-device">
+            <div class="channel-panel active" data-panel="web">
+              <div class="channel-panel-head"><span class="badge" style="background:rgba(58,168,255,0.18); color:var(--blue);">💬</span><span data-i18n="cbweb">Web Sitesi Widget'ı</span></div>
+              <div class="chat-msg bot" data-i18n="cw1">Merhaba! DentFlow'a hoş geldiniz, size nasıl yardımcı olabilirim?</div>
+              <div class="chat-msg user" data-i18n="cw2">Diş temizliği için randevu almak istiyorum.</div>
+              <div class="chat-msg bot" data-i18n="cw3">Tabii! Size en yakın uygun saat yarın 14:00. Uygun mu?</div>
+            </div>
+            <div class="channel-panel" data-panel="whatsapp">
+              <div class="channel-panel-head"><span class="badge" style="background:rgba(37,211,102,0.18); color:#25d366;">📱</span><span data-i18n="cbwa">WhatsApp</span></div>
+              <div class="chat-msg bot" data-i18n="cwa1">Merhaba, DentFlow asistanıyım. Sorunuzu buradan yanıtlayabilirim.</div>
+              <div class="chat-msg user" data-i18n="cwa2">Dolgu fiyatlarınız nedir?</div>
+              <div class="chat-msg bot" data-i18n="cwa3">Kliniğimizin güncel fiyat politikasına göre bilgi verebilirim, detaylandırayım mı?</div>
+            </div>
+            <div class="channel-panel" data-panel="instagram">
+              <div class="channel-panel-head"><span class="badge" style="background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af); color:#fff;">📸</span><span data-i18n="cbig">Instagram</span></div>
+              <div class="chat-msg bot" data-i18n="cig1">Merhaba! Paylaşımınızı gördünüz mü, aklınıza takılan bir şey var mı?</div>
+              <div class="chat-msg user" data-i18n="cig2">Diş beyazlatma hakkında bilgi alabilir miyim?</div>
+              <div class="chat-msg bot" data-i18n="cig3">Elbette, süreci ve randevu seçeneklerini hemen anlatayım.</div>
+            </div>
+            <div class="channel-panel" data-panel="voice">
+              <div class="channel-panel-head"><span class="badge" style="background:rgba(58,168,255,0.18); color:var(--blue);">🎙️</span><span data-i18n="cbvoice">Sesli Mod</span></div>
+              <div class="voice-wave"><span></span><span></span><span></span><span></span><span></span></div>
+              <div class="chat-msg bot" data-i18n="cv1">Sizi dinliyorum, nasıl yardımcı olabilirim?</div>
+              <div class="chat-msg user" data-i18n="cv2">🎤 "Acil bir diş ağrım var, bugün gelebilir miyim?"</div>
+              <div class="chat-msg bot" data-i18n="cv3">Geçmiş olsun! Sizi hemen bugün için triyaj edip randevunuzu ayarlıyorum.</div>
+            </div>
+          </div>
+        </div>
+        <div class="channel-steps">
+          <div class="channel-step active" data-channel="web">
+            <div class="channel-step-num">01</div>
+            <h3 data-i18n="cs1h">Web Sitesi</h3>
+            <p data-i18n="cs1p">Ziyaretçi sitenizde soru sorar, DentFlow anında ve doğal bir sohbetle yanıtlar — hiç beklemeden.</p>
+          </div>
+          <div class="channel-step" data-channel="whatsapp">
+            <div class="channel-step-num">02</div>
+            <h3 data-i18n="cs2h">WhatsApp</h3>
+            <p data-i18n="cs2p">Hastalarınızın en çok kullandığı kanalda, WhatsApp üzerinden randevu alır ve sorularını yanıtlar.</p>
+          </div>
+          <div class="channel-step" data-channel="instagram">
+            <div class="channel-step-num">03</div>
+            <h3 data-i18n="cs3h">Instagram</h3>
+            <p data-i18n="cs3p">DM'lerinize gelen mesajları karşılar, ilgiyi kaçırmadan randevuya dönüştürür.</p>
+          </div>
+          <div class="channel-step" data-channel="voice">
+            <div class="channel-step-num">04</div>
+            <h3 data-i18n="cs4h">Sesli Mod</h3>
+            <p data-i18n="cs4p">Hastanız dilerse konuşur — DentFlow, Google Chirp 3: HD ile doğal ve insana yakın bir sesle yanıtlar.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -286,9 +378,53 @@ window.pageTranslations = {
   t3t:{tr:"İş Yükünü Azaltır", en:"Cuts Your Workload"}, t3d:{tr:"Tekrarlayan soruları yanıtlar, ekibinizin zamanını kazandırır.", en:"Handles repetitive questions and gives your team time back."},
   t4t:{tr:"Daha Fazla Mutlu Hasta", en:"Happier Patients"}, t4d:{tr:"Hızlı, doğru ve kolay iletişim hasta memnuniyetini artırır.", en:"Fast, accurate, easy communication boosts patient satisfaction."},
   foot1:{tr:"KKTC ve Türkiye'deki diş klinikleri için geliştirildi.", en:"Built for dental clinics in Northern Cyprus and Türkiye."},
-  foot2:{tr:"© 2026 DentFlow. Tüm hakları saklıdır.", en:"© 2026 DentFlow. All rights reserved."}
+  foot2:{tr:"© 2026 DentFlow. Tüm hakları saklıdır.", en:"© 2026 DentFlow. All rights reserved."},
+  csh:{tr:"Tek Asistan, <span class=\"blue\">Dört Kanal</span>", en:"One Assistant, <span class=\"blue\">Four Channels</span>"},
+  csp:{tr:"DentFlow her kanalda aynı bilgiyle, aynı özenle yanıtlar — hastanız nereden yazarsa yazsın.", en:"DentFlow answers with the same knowledge and care on every channel — wherever your patient reaches out from."},
+  cbweb:{tr:"Web Sitesi Widget'ı", en:"Website Widget"},
+  cw1:{tr:"Merhaba! DentFlow'a hoş geldiniz, size nasıl yardımcı olabilirim?", en:"Hi! Welcome to DentFlow, how can I help you?"},
+  cw2:{tr:"Diş temizliği için randevu almak istiyorum.", en:"I'd like to book a teeth cleaning."},
+  cw3:{tr:"Tabii! Size en yakın uygun saat yarın 14:00. Uygun mu?", en:"Sure! The nearest slot is tomorrow at 2:00 PM — does that work?"},
+  cbwa:{tr:"WhatsApp", en:"WhatsApp"},
+  cwa1:{tr:"Merhaba, DentFlow asistanıyım. Sorunuzu buradan yanıtlayabilirim.", en:"Hi, I'm the DentFlow assistant. I can answer your question right here."},
+  cwa2:{tr:"Dolgu fiyatlarınız nedir?", en:"What are your filling prices?"},
+  cwa3:{tr:"Kliniğimizin güncel fiyat politikasına göre bilgi verebilirim, detaylandırayım mı?", en:"I can share our clinic's current pricing — want the details?"},
+  cbig:{tr:"Instagram", en:"Instagram"},
+  cig1:{tr:"Merhaba! Paylaşımınızı gördünüz mü, aklınıza takılan bir şey var mı?", en:"Hi! Saw our post — anything you're curious about?"},
+  cig2:{tr:"Diş beyazlatma hakkında bilgi alabilir miyim?", en:"Can I get info about teeth whitening?"},
+  cig3:{tr:"Elbette, süreci ve randevu seçeneklerini hemen anlatayım.", en:"Of course, let me walk you through the process and booking options."},
+  cbvoice:{tr:"Sesli Mod", en:"Voice Mode"},
+  cv1:{tr:"Sizi dinliyorum, nasıl yardımcı olabilirim?", en:"I'm listening — how can I help?"},
+  cv2:{tr:"🎤 \"Acil bir diş ağrım var, bugün gelebilir miyim?\"", en:"🎤 \"I have urgent tooth pain, can I come in today?\""},
+  cv3:{tr:"Geçmiş olsun! Sizi hemen bugün için triyaj edip randevunuzu ayarlıyorum.", en:"Sorry to hear that! Let me triage you now and set up a same-day appointment."},
+  cs1h:{tr:"Web Sitesi", en:"Website"},
+  cs1p:{tr:"Ziyaretçi sitenizde soru sorar, DentFlow anında ve doğal bir sohbetle yanıtlar — hiç beklemeden.", en:"A visitor asks a question on your site, and DentFlow replies instantly in natural conversation — no waiting."},
+  cs2h:{tr:"WhatsApp", en:"WhatsApp"},
+  cs2p:{tr:"Hastalarınızın en çok kullandığı kanalda, WhatsApp üzerinden randevu alır ve sorularını yanıtlar.", en:"Books appointments and answers questions right on WhatsApp — the channel your patients use most."},
+  cs3h:{tr:"Instagram", en:"Instagram"},
+  cs3p:{tr:"DM'lerinize gelen mesajları karşılar, ilgiyi kaçırmadan randevuya dönüştürür.", en:"Greets messages in your DMs and turns that interest into a booking before it slips away."},
+  cs4h:{tr:"Sesli Mod", en:"Voice Mode"},
+  cs4p:{tr:"Hastanız dilerse konuşur — DentFlow, Google Chirp 3: HD ile doğal ve insana yakın bir sesle yanıtlar.", en:"Patients can simply talk — DentFlow replies with a natural, human-like voice powered by Google's Chirp 3: HD."}
 };
 </script>
 <script src="js/site.js"></script>
+<script>
+(function(){
+  var steps = document.querySelectorAll('.channel-step');
+  var panels = document.querySelectorAll('.channel-panel');
+  if(!steps.length || !panels.length) return;
+  function setActive(channel){
+    panels.forEach(function(p){ p.classList.toggle('active', p.dataset.panel === channel); });
+    steps.forEach(function(s){ s.classList.toggle('active', s.dataset.channel === channel); });
+  }
+  if(!('IntersectionObserver' in window)){ return; }
+  var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){ setActive(entry.target.dataset.channel); }
+    });
+  }, { threshold: 0.5, rootMargin: '-15% 0px -15% 0px' });
+  steps.forEach(function(s){ observer.observe(s); });
+})();
+</script>
 </body>
 </html>
