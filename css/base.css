@@ -80,11 +80,10 @@ section{padding:88px 0;}
 .trust-item h4{font-size:14.5px; font-weight:600; margin-bottom:4px;}
 .trust-item p{font-size:12.5px; color:var(--ink-faint);}
 
-.value-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:28px; background:#fff; border-radius:20px; padding:44px; }
+.value-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:24px; }
 @media (max-width:800px){ .value-grid{grid-template-columns:1fr 1fr;} }
 @media (max-width:520px){ .value-grid{grid-template-columns:1fr;} }
-.value-item{display:flex; flex-direction:column; align-items:flex-start; gap:12px;}
-.value-item .ico{ width:46px; height:46px; border-radius:12px; background:rgba(34,134,224,0.12); color:#1f6fbf; display:flex; align-items:center; justify-content:center; }
+.value-item{ background:var(--card); border:1px solid var(--card-border); box-shadow:0 20px 50px -35px rgba(0,0,0,0.25); border-radius:18px; padding:28px; display:flex; flex-direction:column; gap:10px; }
 .value-item h4{font-family:var(--font-display); font-size:15.5px; font-weight:600;}
 .value-item p{font-size:13px; color:var(--band-ink-soft); line-height:1.5;}
 
