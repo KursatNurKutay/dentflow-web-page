@@ -54,8 +54,8 @@ h1 .accent{color:var(--blue);}
 @keyframes float{ 0%,100%{transform:translateY(0);} 50%{transform:translateY(-8px);} }
 @media (prefers-reduced-motion:reduce){ .bubble{animation:none;} }
 @media (max-width:520px){ .bubble{font-size:10px; max-width:110px; padding:6px 9px;} }
-.fv-lang{ background:url("assets/img/home-sc-03.jpg") center/cover no-repeat; }
-.fv-daynight{ background:url("assets/img/home-sc-02.jpg") center/cover no-repeat; }
+.fv-lang{ background:url("assets/img/secretary-multi.jpg") center/cover no-repeat; }
+.fv-daynight{ background:url("assets/img/smile-dental.jpg") center/cover no-repeat; }
 .fv-clinic{ background:url("assets/img/home-sc-01.jpg") center/cover no-repeat; }
 
 .channel-grid{ display:grid; grid-template-columns:0.85fr 1.15fr; gap:60px; margin-top:50px; }
@@ -67,6 +67,8 @@ h1 .accent{color:var(--blue);}
 .channel-panel.active{ opacity:1; pointer-events:auto; }
 .channel-panel-head{ display:flex; align-items:center; gap:9px; font-size:11.5px; font-weight:700; color:#a9b6c0; margin-bottom:4px; }
 .channel-panel-head .badge{ width:28px; height:28px; border-radius:9px; display:flex; align-items:center; justify-content:center; font-size:13px; flex-shrink:0; }
+.channel-panel-head .badge-icon{ width:26px; height:26px; object-fit:contain; flex-shrink:0; }
+.channel-step-icon{ width:22px; height:22px; object-fit:contain; vertical-align:-5px; margin-right:8px; }
 .chat-msg{ border-radius:11px; padding:9px 13px; font-size:12px; max-width:85%; line-height:1.4; }
 .chat-msg.bot{ background:#1b2530; color:#dfe7ee; align-self:flex-start; }
 .chat-msg.user{ background:var(--blue); color:#0b0f14; align-self:flex-end; font-weight:600; }
@@ -198,25 +200,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="channel-visual-wrap">
           <div class="channel-device">
             <div class="channel-panel active" data-panel="web">
-              <div class="channel-panel-head"><span class="badge" style="background:rgba(58,168,255,0.18); color:var(--blue);">💬</span><span data-i18n="cbweb">Web Sitesi Widget'ı</span></div>
+              <div class="channel-panel-head"><img class="badge-icon" src="assets/img/icons/web.png" alt="Web"><span data-i18n="cbweb">Web Sitesi Widget'ı</span></div>
               <div class="chat-msg bot" data-i18n="cw1">Merhaba! DentFlow'a hoş geldiniz, size nasıl yardımcı olabilirim?</div>
               <div class="chat-msg user" data-i18n="cw2">Diş temizliği için randevu almak istiyorum.</div>
               <div class="chat-msg bot" data-i18n="cw3">Tabii! Size en yakın uygun saat yarın 14:00. Uygun mu?</div>
             </div>
             <div class="channel-panel" data-panel="whatsapp">
-              <div class="channel-panel-head"><span class="badge" style="background:rgba(37,211,102,0.18); color:#25d366;">📱</span><span data-i18n="cbwa">WhatsApp</span></div>
+              <div class="channel-panel-head"><img class="badge-icon" src="assets/img/icons/whatsapp.png" alt="WhatsApp"><span data-i18n="cbwa">WhatsApp</span></div>
               <div class="chat-msg bot" data-i18n="cwa1">Merhaba, DentFlow asistanıyım. Sorunuzu buradan yanıtlayabilirim.</div>
               <div class="chat-msg user" data-i18n="cwa2">Dolgu fiyatlarınız nedir?</div>
               <div class="chat-msg bot" data-i18n="cwa3">Kliniğimizin güncel fiyat politikasına göre bilgi verebilirim, detaylandırayım mı?</div>
             </div>
             <div class="channel-panel" data-panel="instagram">
-              <div class="channel-panel-head"><span class="badge" style="background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af); color:#fff;">📸</span><span data-i18n="cbig">Instagram</span></div>
+              <div class="channel-panel-head"><img class="badge-icon" src="assets/img/icons/instagram.png" alt="Instagram"><span data-i18n="cbig">Instagram</span></div>
               <div class="chat-msg bot" data-i18n="cig1">Merhaba! Paylaşımınızı gördünüz mü, aklınıza takılan bir şey var mı?</div>
               <div class="chat-msg user" data-i18n="cig2">Diş beyazlatma hakkında bilgi alabilir miyim?</div>
               <div class="chat-msg bot" data-i18n="cig3">Elbette, süreci ve randevu seçeneklerini hemen anlatayım.</div>
             </div>
             <div class="channel-panel" data-panel="messenger">
-              <div class="channel-panel-head"><span class="badge" style="background:linear-gradient(135deg,#00b2ff,#006aff); color:#fff;">💬</span><span data-i18n="cbmsg">Facebook Messenger</span></div>
+              <div class="channel-panel-head"><img class="badge-icon" src="assets/img/icons/facebook.png" alt="Facebook Messenger"><span data-i18n="cbmsg">Facebook Messenger</span></div>
               <div class="chat-msg bot" data-i18n="cmsg1">Merhaba! Facebook sayfamızdan yazdığınız için teşekkürler, nasıl yardımcı olabilirim?</div>
               <div class="chat-msg user" data-i18n="cmsg2">İmplant tedavisi hakkında bilgi almak istiyorum.</div>
               <div class="chat-msg bot" data-i18n="cmsg3">Memnuniyetle! Size uygun bir muayene randevusu ayarlayabilirim.</div>
@@ -233,22 +235,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="channel-steps">
           <div class="channel-step active" data-channel="web">
             <div class="channel-step-num">01</div>
-            <h3 data-i18n="cs1h">Web Sitesi</h3>
+            <h3><img class="channel-step-icon" src="assets/img/icons/web.png" alt=""><span data-i18n="cs1h">Web Sitesi</span></h3>
             <p data-i18n="cs1p">Ziyaretçi sitenizde soru sorar, DentFlow anında ve doğal bir sohbetle yanıtlar — hiç beklemeden.</p>
           </div>
           <div class="channel-step" data-channel="whatsapp">
             <div class="channel-step-num">02</div>
-            <h3 data-i18n="cs2h">WhatsApp</h3>
+            <h3><img class="channel-step-icon" src="assets/img/icons/whatsapp.png" alt=""><span data-i18n="cs2h">WhatsApp</span></h3>
             <p data-i18n="cs2p">Hastalarınızın en çok kullandığı kanalda, WhatsApp üzerinden randevu alır ve sorularını yanıtlar.</p>
           </div>
           <div class="channel-step" data-channel="instagram">
             <div class="channel-step-num">03</div>
-            <h3 data-i18n="cs3h">Instagram</h3>
+            <h3><img class="channel-step-icon" src="assets/img/icons/instagram.png" alt=""><span data-i18n="cs3h">Instagram</span></h3>
             <p data-i18n="cs3p">DM'lerinize gelen mesajları karşılar, ilgiyi kaçırmadan randevuya dönüştürür.</p>
           </div>
           <div class="channel-step" data-channel="messenger">
             <div class="channel-step-num">04</div>
-            <h3 data-i18n="cs5h">Facebook Messenger</h3>
+            <h3><img class="channel-step-icon" src="assets/img/icons/facebook.png" alt=""><span data-i18n="cs5h">Facebook Messenger</span></h3>
             <p data-i18n="cs5p">Facebook sayfanız üzerinden gelen mesajları yanıtlar, hastalarınızı hiç bekletmez.</p>
           </div>
           <div class="channel-step" data-channel="voice">
