@@ -67,8 +67,8 @@ h1 .accent{color:var(--blue);}
 .channel-panel.active{ opacity:1; pointer-events:auto; }
 .channel-panel-head{ display:flex; align-items:center; gap:9px; font-size:11.5px; font-weight:700; color:#a9b6c0; margin-bottom:4px; }
 .channel-panel-head .badge{ width:28px; height:28px; border-radius:9px; display:flex; align-items:center; justify-content:center; font-size:13px; flex-shrink:0; }
-.channel-panel-head .badge-icon{ width:26px; height:26px; object-fit:contain; flex-shrink:0; }
-.channel-step-icon{ width:22px; height:22px; object-fit:contain; vertical-align:-5px; margin-right:8px; }
+.channel-panel-head .badge-icon{ width:34px; height:34px; object-fit:contain; flex-shrink:0; filter:drop-shadow(0 2px 6px rgba(0,0,0,0.35)); }
+.channel-step-icon{ width:30px; height:30px; object-fit:contain; vertical-align:-7px; margin-right:10px; }
 .chat-msg{ border-radius:11px; padding:9px 13px; font-size:12px; max-width:85%; line-height:1.4; }
 .chat-msg.bot{ background:#1b2530; color:#dfe7ee; align-self:flex-start; }
 .chat-msg.user{ background:var(--blue); color:#0b0f14; align-self:flex-end; font-weight:600; }
@@ -82,9 +82,9 @@ h1 .accent{color:var(--blue);}
 @keyframes wave{ 0%,100%{transform:scaleY(0.5);} 50%{transform:scaleY(1);} }
 @media (prefers-reduced-motion:reduce){ .voice-wave span{animation:none;} }
 .channel-steps{ display:flex; flex-direction:column; }
-.channel-step{ min-height:56vh; display:flex; flex-direction:column; justify-content:center; padding:20px 0; opacity:0.32; transition:opacity .35s ease; }
+.channel-step{ min-height:38vh; display:flex; flex-direction:column; justify-content:center; padding:20px 0; opacity:0.32; transition:opacity .35s ease; }
 .channel-step.active{ opacity:1; }
-.channel-step:last-child{ min-height:30vh; }
+.channel-step:last-child{ min-height:20vh; }
 @media (max-width:900px){ .channel-step{ min-height:0; opacity:1; padding:18px 0; } }
 .channel-step-num{ font-family:var(--font-display); font-size:13px; font-weight:700; color:var(--blue); margin-bottom:10px; letter-spacing:0.5px; }
 .channel-step h3{ font-family:var(--font-display); font-size:clamp(22px,2.6vw,28px); font-weight:700; margin-bottom:10px; }
@@ -224,7 +224,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="chat-msg bot" data-i18n="cmsg3">Memnuniyetle! Size uygun bir muayene randevusu ayarlayabilirim.</div>
             </div>
             <div class="channel-panel" data-panel="voice">
-              <div class="channel-panel-head"><span class="badge" style="background:rgba(58,168,255,0.18); color:var(--blue);">🎙️</span><span data-i18n="cbvoice">Sesli Mod</span></div>
+              <div class="channel-panel-head"><img class="badge-icon" src="assets/img/icons/voice.svg" alt="Sesli Mod"><span data-i18n="cbvoice">Sesli Mod</span></div>
               <div class="voice-wave"><span></span><span></span><span></span><span></span><span></span></div>
               <div class="chat-msg bot" data-i18n="cv1">Sizi dinliyorum, nasıl yardımcı olabilirim?</div>
               <div class="chat-msg user" data-i18n="cv2">🎤 "Acil bir diş ağrım var, bugün gelebilir miyim?"</div>
@@ -255,7 +255,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           <div class="channel-step" data-channel="voice">
             <div class="channel-step-num">05</div>
-            <h3 data-i18n="cs4h">Sesli Mod</h3>
+            <h3><img class="channel-step-icon" src="assets/img/icons/voice.svg" alt=""><span data-i18n="cs4h">Sesli Mod</span></h3>
             <p data-i18n="cs4p">Hastanız dilerse konuşur — DentFlow, Google Chirp 3: HD ile doğal ve insana yakın bir sesle yanıtlar.</p>
           </div>
         </div>
