@@ -37,7 +37,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     mask-image:radial-gradient(ellipse 60% 80% at 78% 40%, black 40%, transparent 75%);
   }
   .ahero .wrap{position:relative; z-index:1;}
-  .ahero-grid{ display:grid; grid-template-columns:1.05fr 0.95fr; gap:50px; align-items:center; }
+  .ahero-grid{ display:grid; grid-template-columns:1.05fr 0.95fr; gap:50px; align-items:start; }
   @media (max-width:860px){ .ahero-grid{grid-template-columns:1fr;} }
   .ahero .eyebrow{ color:var(--kb-red); }
   .ahero .eyebrow::before{ background:var(--kb-red); }
@@ -45,7 +45,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .ahero h2.sub{ font-family:var(--font-display); font-weight:600; font-size:clamp(19px,2.4vw,25px); margin-bottom:22px; color:var(--kb-navy); }
   .ahero h2.sub .hl{ color:var(--kb-red); }
   .rule{ width:52px; height:3px; background:var(--kb-red); margin-bottom:22px; border-radius:2px; }
-  .ahero p{ font-size:14.5px; color:var(--band-ink-soft); max-width:460px; margin-bottom:14px; line-height:1.6; }
+  .ahero p{ font-size:14.5px; color:var(--band-ink-soft); max-width:520px; margin-bottom:14px; line-height:1.6; }
+  .founder-sign{ margin-top:24px; }
+  .founder-sign .founder-name{ display:block; font-family:var(--font-display); font-weight:700; font-size:16px; color:var(--kb-navy); }
+  .founder-sign .founder-role{ display:block; font-size:12.5px; color:var(--band-ink-soft); }
   .koby-mark{ display:flex; flex-direction:column; align-items:center; gap:16px; text-align:center; }
   .koby-mark img{height:80px; width:auto;}
   .koby-mark .tagline{ font-family:var(--font-display); font-weight:600; font-size:15px; color:var(--kb-navy); max-width:280px; }
@@ -96,13 +99,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h1 data-i18n="h1">KOBY SOFT</h1>
         <h2 class="sub" data-i18n="sub">Büyüyen işletmeler için <span class="hl">akıllı çözümler.</span></h2>
         <div class="rule"></div>
-        <p data-i18n="p1">KOBY SOFT, Kuzey Kıbrıs Türk Cumhuriyeti'nde faaliyet gösteren bir yazılım ve dijital çözümler şirketidir.</p>
-        <p data-i18n="p2">İşletmelerin iletişimini kolaylaştıran, süreçlerini akıllandıran ve müşterilerine daha iyi bir deneyim sunmalarını sağlayan ürünler geliştiriyoruz.</p>
-        <p data-i18n="p3">Teknoloji ile işletmelerin büyümesine katkı sağlamak ve bölgemizde dijital dönüşümü desteklemek en temel hedefimizdir.</p>
+        <p data-i18n="p1">KOBY SOFT'un yolculuğu, 1984 yılında evlerimize giren ilk kişisel bilgisayarlardan biri olan Commodore 64 ile başladı.</p>
+        <p data-i18n="p2">O günden bugüne geçen 42 yıl içerisinde bilgisayarların evlerden iş hayatının merkezine yerleşmesine tanıklık ettik; internet devrimini yaşadık, dünyanın mobil hale gelişini izledik, e-ticareti yedik yuttuk, bulut teknolojileriyle sınırların ortadan kalktığını gördük ve şimdi de Yapay Zekâ ile yaşamayı, çalışmayı ve üretmeyi öğreniyoruz.</p>
+        <p data-i18n="p3">KOBY SOFT işte tüm bu teknoloji yolculuğunun bir sonucu.</p>
+        <p data-i18n="p4">Teknoloji değişti, araçlar değişti, iş yapma biçimlerimiz değişti. Ama değişmeyen bir şey vardı: Yeni teknolojiyi sadece takip etmek değil, onu gerçek hayatta işe yarayan bir şeye dönüştürme merakı.</p>
+        <p data-i18n="p5">Bugün KOBY SOFT ile yaptığımız da tam olarak bu.</p>
+        <p data-i18n="p6">Karmaşık teknolojileri işletmeler için basit, kullanılabilir ve gerçekten fayda sağlayan çözümlere dönüştürüyoruz. Yapay zekâyı bir gösteri malzemesi olarak değil, işletmenin günlük hayatında çalışan bir araç olarak görüyoruz.</p>
+        <p data-i18n="p7">Bizim için mesele "yapay zekâ" değil, onun işletmeler için ne yapabildiği.</p>
+        <p data-i18n="p8">Mesele, teknolojiyi işletmenin doğal bir parçası haline getirmek.</p>
+        <div class="founder-sign">
+          <span class="founder-name">Kürşat Kutay</span>
+          <span class="founder-role" data-i18n="founderRole">Founder</span>
+        </div>
       </div>
       <div class="koby-mark">
         <img src="assets/img/logos/kobysoft-logo.png" alt="KOBY SOFT">
-        <div class="tagline">Büyüyen işletmeler için <span class="hl">akıllı çözümler.</span></div>
+        <div class="tagline" data-i18n="kobyTag">Büyüyen işletmeler için <span class="hl">akıllı çözümler.</span></div>
       </div>
     </div>
   </section>
@@ -203,9 +215,15 @@ window.pageTranslations = {
   eyebrow:{tr:"HAKKIMIZDA", en:"ABOUT US"},
   h1:{tr:"KOBY SOFT", en:"KOBY SOFT"},
   sub:{tr:"Büyüyen işletmeler için <span class=\"hl\">akıllı çözümler.</span>", en:"<span class=\"hl\">Smart solutions</span> for growing businesses."},
-  p1:{tr:"KOBY SOFT, Kuzey Kıbrıs Türk Cumhuriyeti'nde faaliyet gösteren bir yazılım ve dijital çözümler şirketidir.", en:"KOBY SOFT is a software and digital solutions company operating in the Turkish Republic of Northern Cyprus."},
-  p2:{tr:"İşletmelerin iletişimini kolaylaştıran, süreçlerini akıllandıran ve müşterilerine daha iyi bir deneyim sunmalarını sağlayan ürünler geliştiriyoruz.", en:"We build products that make businesses' communication easier, make their processes smarter, and help them offer their customers a better experience."},
-  p3:{tr:"Teknoloji ile işletmelerin büyümesine katkı sağlamak ve bölgemizde dijital dönüşümü desteklemek en temel hedefimizdir.", en:"Our core goal is to help businesses grow through technology and support digital transformation across our region."},
+  p1:{tr:"KOBY SOFT'un yolculuğu, 1984 yılında evlerimize giren ilk kişisel bilgisayarlardan biri olan Commodore 64 ile başladı.", en:"KOBY SOFT's journey began in 1984, with one of the first personal computers to enter our homes: the Commodore 64."},
+  p2:{tr:"O günden bugüne geçen 42 yıl içerisinde bilgisayarların evlerden iş hayatının merkezine yerleşmesine tanıklık ettik; internet devrimini yaşadık, dünyanın mobil hale gelişini izledik, e-ticareti yedik yuttuk, bulut teknolojileriyle sınırların ortadan kalktığını gördük ve şimdi de Yapay Zekâ ile yaşamayı, çalışmayı ve üretmeyi öğreniyoruz.", en:"In the 42 years since, we've watched computers move from our homes to the center of business life; we lived through the internet revolution, watched the world go mobile, embraced e-commerce wholeheartedly, saw cloud technology erase borders, and now we're learning to live, work and create with Artificial Intelligence."},
+  p3:{tr:"KOBY SOFT işte tüm bu teknoloji yolculuğunun bir sonucu.", en:"KOBY SOFT is the result of that entire technology journey."},
+  p4:{tr:"Teknoloji değişti, araçlar değişti, iş yapma biçimlerimiz değişti. Ama değişmeyen bir şey vardı: Yeni teknolojiyi sadece takip etmek değil, onu gerçek hayatta işe yarayan bir şeye dönüştürme merakı.", en:"Technology changed, the tools changed, the way we work changed. But one thing never did: the curiosity to not just follow new technology, but to turn it into something that actually works in real life."},
+  p5:{tr:"Bugün KOBY SOFT ile yaptığımız da tam olarak bu.", en:"That's exactly what we do today with KOBY SOFT."},
+  p6:{tr:"Karmaşık teknolojileri işletmeler için basit, kullanılabilir ve gerçekten fayda sağlayan çözümlere dönüştürüyoruz. Yapay zekâyı bir gösteri malzemesi olarak değil, işletmenin günlük hayatında çalışan bir araç olarak görüyoruz.", en:"We turn complex technologies into solutions that are simple, usable, and genuinely beneficial for businesses. We see AI not as a showpiece, but as a tool that works in the everyday life of a business."},
+  p7:{tr:"Bizim için mesele \"yapay zekâ\" değil, onun işletmeler için ne yapabildiği.", en:"For us, it's not about \"AI\" — it's about what it can actually do for businesses."},
+  p8:{tr:"Mesele, teknolojiyi işletmenin doğal bir parçası haline getirmek.", en:"It's about making technology a natural part of the business."},
+  founderRole:{tr:"Founder", en:"Founder"},
   v1t:{tr:"İşletmelere Odaklıyız", en:"Focused on Businesses"},
   v1d:{tr:"Küçük, orta ve büyüyen işletmelerin gerçek ihtiyaçlarına odaklanıyoruz.", en:"We focus on the real needs of small, medium and growing businesses."},
   v2t:{tr:"Akıllı ve Kullanışlı Çözümler", en:"Smart, Usable Solutions"},
