@@ -62,8 +62,6 @@ section{padding:88px 0;}
   radial-gradient(circle at 30% 20%, rgba(58,168,255,0.35), transparent 55%),
   radial-gradient(circle at 75% 70%, rgba(34,134,224,0.3), transparent 50%),
   linear-gradient(160deg, #dfe8f4, #cddaeb); }
-.band-visual .globe{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; }
-.band-visual .globe svg{ width:58%; height:58%; opacity:0.9; }
 .band-copy{padding:44px 44px 44px 20px;}
 @media (max-width:800px){ .band-copy{padding:36px;} }
 .band-copy h2{ font-family:var(--font-display); font-weight:700; font-size:clamp(22px,2.6vw,28px); margin-bottom:14px; }
