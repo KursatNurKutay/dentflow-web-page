@@ -35,6 +35,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 h1{ font-family:var(--font-display); font-size:clamp(26px, 3.4vw, 40px); font-weight:700; line-height:1.15; letter-spacing:-0.5px; margin-bottom:22px; }
 h1 .accent{color:var(--blue);}
 .hero .eyebrow{ font-size:clamp(9.5px, 2.6vw, 12.5px); letter-spacing:0.6px; white-space:nowrap; }
+.hero .eyebrow::before{ display:none; }
 .hero p.lead{ font-size:16.5px; color:var(--ink-dim); max-width:460px; margin-bottom:28px; }
 .input-pills{ display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin-bottom:10px; }
 .mini-pill{ display:inline-flex; align-items:center; gap:8px; border:1.5px solid rgba(58,168,255,0.45); border-radius:999px; padding:11px 20px; background:linear-gradient(135deg, rgba(58,168,255,0.12), rgba(58,168,255,0.03)); font-size:15px; color:var(--ink-dim); box-shadow:0 8px 20px rgba(58,168,255,0.14), inset 0 1px 0 rgba(255,255,255,0.05); }
@@ -158,7 +159,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div>
         <div class="eyebrow" data-i18n="eyebrow">Kliniğiniz artık hastalarınızın dilini konuşuyor.</div>
         <h1><span data-i18n="h1a">Her hastaya, kendi dilinde bir merhaba.</span><br><span data-i18n="h1b">Ekibinizin yeni üyesi:</span> <span class="accent" data-i18n="h1c">DentFlow Asistan</span></h1>
-        <p class="lead" data-i18n="lead">Kliniğiniz artık hastalarınızın dilini konuşuyor. <span class="brand-name">DentFlow Asistan</span>, Cumartesi Pazar demeden 7/24 hastalarınızla ilgileniyor. Dilerseniz onları WhatsApp, Instagram ve Facebook'ta karşılıyor, ihtiyaçları ile ilgileniyor.</p>
+        <p class="lead" data-i18n="lead"><span class="brand-name">DentFlow Asistan</span>, Cumartesi Pazar demeden 7/24 hastalarınızla ilgilenir.<br>Dilerseniz onları WhatsApp, Instagram ve Facebook'ta karşılar, ihtiyaçları ile ilgilenir.</p>
         <div class="input-pills">
           <span class="mini-pill"><span class="pill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5.5" width="20" height="13" rx="2.5"/><circle cx="6.5" cy="10.5" r="0.6" fill="currentColor" stroke="none"/><circle cx="10.5" cy="10.5" r="0.6" fill="currentColor" stroke="none"/><circle cx="14.5" cy="10.5" r="0.6" fill="currentColor" stroke="none"/><circle cx="18" cy="10.5" r="0.6" fill="currentColor" stroke="none"/><line x1="6.5" y1="14.5" x2="17.5" y2="14.5"/></svg></span><span data-i18n="pillPrefix1">İsterseniz</span> <span class="blue" data-i18n="pillType">Yazın</span></span>
           <span class="mini-pill"><span class="pill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3z"/><path d="M19 11a7 7 0 0 1-14 0"/><line x1="12" y1="18" x2="12" y2="21.5"/><line x1="9" y1="21.5" x2="15" y2="21.5"/></svg></span><span data-i18n="pillPrefix2">İsterseniz</span> <span class="blue" data-i18n="pillTalk">Konuşun</span></span>
@@ -364,7 +365,7 @@ window.pageTranslations = {
   h1a:{tr:"Her hastaya, kendi dilinde bir merhaba.", en:"A hello, in every patient's own language."},
   h1b:{tr:"Ekibinizin yeni üyesi:", en:"The newest member of your team:"},
   h1c:{tr:"DentFlow Asistan", en:"DentFlow Assistant"},
-  lead:{tr:"Kliniğiniz artık hastalarınızın dilini konuşuyor. <span class=\"brand-name\">DentFlow Asistan</span>, Cumartesi Pazar demeden 7/24 hastalarınızla ilgileniyor. Dilerseniz onları WhatsApp, Instagram ve Facebook'ta karşılıyor, ihtiyaçları ile ilgileniyor.", en:"Your clinic now speaks your patients' language. <span class=\"brand-name\">DentFlow Assistant</span> looks after your patients 24/7, weekends included. It greets them on WhatsApp, Instagram and Facebook — and takes care of whatever they need."},
+  lead:{tr:"<span class=\"brand-name\">DentFlow Asistan</span>, Cumartesi Pazar demeden 7/24 hastalarınızla ilgilenir.<br>Dilerseniz onları WhatsApp, Instagram ve Facebook'ta karşılar, ihtiyaçları ile ilgilenir.", en:"<span class=\"brand-name\">DentFlow Assistant</span> looks after your patients 24/7, weekends included.<br>It greets them on WhatsApp, Instagram and Facebook, and takes care of whatever they need."},
   pillPrefix1:{tr:"İsterseniz", en:"Feel Free to"},
   pillPrefix2:{tr:"İsterseniz", en:"Feel Free to"},
   pillType:{tr:"Yazın", en:"Type"},
