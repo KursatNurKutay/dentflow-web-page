@@ -57,7 +57,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   @media (max-width:700px){ .support-grid{grid-template-columns:1fr;} }
   .support-card{ background:var(--card); border:1px solid var(--card-border); border-radius:14px; padding:22px; display:flex; gap:14px; align-items:flex-start; }
   .support-card .ico{ width:38px; height:38px; border-radius:10px; background:rgba(58,168,255,0.1); color:var(--blue); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  .support-card h4{ font-family:var(--font-display); font-weight:700; font-size:13.5px; letter-spacing:0.3px; margin-bottom:6px; }
   .support-card p{font-size:13.5px; color:var(--ink-dim); line-height:1.5;}
+  .challenge-wrap{ margin-top:52px; }
+  .challenge-head{ text-align:center; font-family:var(--font-display); font-weight:700; font-size:15px; color:var(--ink); margin-bottom:18px; }
+  .challenge-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
+  @media (max-width:900px){ .challenge-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:520px){ .challenge-grid{grid-template-columns:1fr;} }
+  .challenge-chip{ display:block; background:var(--card); border:1px solid var(--card-border); border-radius:12px; padding:14px 16px; font-size:13px; color:var(--ink-dim); text-align:center; transition:border-color .2s, box-shadow .2s, transform .15s; }
+  .challenge-chip:hover{ border-color:rgba(58,168,255,0.45); box-shadow:0 10px 24px -14px rgba(58,168,255,0.4); transform:translateY(-2px); }
 </style>
 </head>
 <body>
@@ -91,12 +99,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="wrap dhero-grid">
       <div>
         <div class="eyebrow" data-i18n="eyebrow">CANLI DEMO</div>
-        <h1><span data-i18n="h1a"><span class="brand-name">DentFlow Asistan</span>'ı</span> <span class="blue" data-i18n="h1b">Canlı Deneyin</span></h1>
-        <p class="lead" data-i18n="lead"><span class="brand-name">DentFlow Asistan</span>'ın gerçek bir diş kliniği web sitesinde nasıl çalıştığını görün. Göreceksiniz ki kliniğiniz emin ellerde.</p>
+        <h1><span data-i18n="h1a"><span class="brand-name">DentFlow</span>'u</span> <span class="blue" data-i18n="h1b">Bir Hastanız Gibi Deneyin</span></h1>
+        <p class="lead" data-i18n="lead">Gerçek bir diş kliniği için hazırlanmış <span class="brand-name">DentFlow Asistan</span> ile yazın veya konuşun. Sorular sorun, kliniği tanıyıp tanımadığını ve hastalarınızla nasıl iletişim kurduğunu kendiniz deneyimleyin.</p>
         <ul class="dcheck">
-          <li><span class="tick">✓</span><span data-i18n="c1">Domain kaydı yapılmış (aynı sizin kliniğiniz gibi) gerçek bir web sitesinde çalışır.</span></li>
-          <li><span class="tick">✓</span><span data-i18n="c2">Hastalarınızın tecrübe edecekleri deneyimi bire bir canlandırır.</span></li>
-          <li><span class="tick">✓</span><span data-i18n="c3">Ses modu aktive edilmiştir. Dilerseniz yazın, dilerseniz konuşun.</span></li>
+          <li><span class="tick">✓</span><span data-i18n="c1">Gerçek bir diş kliniği senaryosu için hazırlanmıştır.</span></li>
+          <li><span class="tick">✓</span><span data-i18n="c2">Asistan kliniğin hizmetlerini, doktorlarını ve çalışma düzenini bilir.</span></li>
+          <li><span class="tick">✓</span><span data-i18n="c3">Türkçe veya farklı bir dilde yazabilir, dilerseniz sesli konuşabilirsiniz.</span></li>
         </ul>
       </div>
       <div class="demo-frame">
@@ -118,20 +126,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="cc-badge">🦷</div>
         <div>
           <h3 data-i18n="cch">Dr. Aslan Diş Polikliniği</h3>
-          <p data-i18n="ccp">Dr. Aslan Diş Polikliniği, <span class="brand-name">DentFlow Asistan</span>'ı gerçek bir hasta/müşteri gibi deneyebilmeniz için, bizlerin hazırladığı bir test kliniğidir. KKTC'deki diş kliniklerini inceleyerek hazırlanmıştır. Lefkoşa'nın Köşklüçiftlik semtinde; genel diş hekimliği, ortodonti ve ağız-çene cerrahisi alanlarında, hem yerli, hem de yabancı hastalara hizmet veren hayali bir kliniktir.</p>
+          <p data-i18n="ccp"><span class="brand-name">DentFlow</span>'u gerçek bir hasta gibi deneyebilmeniz için hazırladığımız test kliniğidir. Lefkoşa Küçükkaymaklı'da hizmet veren gerçekçi bir KKTC diş kliniği senaryosu üzerine hazırlanmıştır.</p>
         </div>
       </div>
 
       <div class="cta-wrap">
         <a href="https://draslandis-demo.testsitehub.com" target="_blank" rel="noopener" class="btn-huge">
-          ↗ <span data-i18n="ctabtn">CANLI DEMOYU AÇ</span> →
+          ↗ <span data-i18n="ctabtn">DENTFLOW'U CANLI DENE</span> →
         </a>
-        <p class="cta-note" data-i18n="ctanote">Demo sitesi yeni bir sekmede açılacaktır.</p>
+        <p class="cta-note" data-i18n="ctanote">Yeni sekmede açılır. Kurulum veya kayıt gerekmez.</p>
       </div>
 
       <div class="support-grid">
-        <div class="support-card reveal glow"><div class="ico">💬</div><p data-i18n="sc1">Asistana gerçek bir hasta gibi sorularınızı sorun. Şikayetinizi anlatın.</p></div>
-        <div class="support-card reveal glow"><div class="ico">🎙️</div><p data-i18n="sc2">Bir doktor olarak kliniğinizin resepsiyonunda duymak isteyeceğiniz veya istemeyeceğiniz konuları sorun.</p></div>
+        <div class="support-card reveal glow"><div class="ico">💬</div><div><h4 data-i18n="sc1h">HASTA GİBİ DENEYİN</h4><p data-i18n="sc1">Diş ağrısı, tedavi, fiyat, çalışma saatleri veya kliniğe ulaşım hakkında sorun. İsterseniz farklı bir dilde yazın veya konuşun.</p></div></div>
+        <div class="support-card reveal glow"><div class="ico">🎙️</div><div><h4 data-i18n="sc2h">KLİNİK SAHİBİ GİBİ TEST EDİN</h4><p data-i18n="sc2">Zor sorular sorun. Kliniğe özel bilgi isteyin. Asistanın neyi bildiğini, neyi söylemediğini ve hastayı gerektiğinde ekibinize nasıl yönlendirdiğini görün.</p></div></div>
+      </div>
+
+      <div class="challenge-wrap">
+        <p class="challenge-head" data-i18n="challh">DentFlow'u Biraz Zorlayın, İstediğiniz Dilde</p>
+        <div class="challenge-grid">
+          <a href="https://draslandis-demo.testsitehub.com" target="_blank" rel="noopener" class="challenge-chip">"Dişim sıcak ve soğukta çok hassas oluyor. Bunun nedeni ne olabilir?"</a>
+          <a href="https://draslandis-demo.testsitehub.com" target="_blank" rel="noopener" class="challenge-chip">"Kanal tedavisi ile diş çekimi arasındaki fark nedir?"</a>
+          <a href="https://draslandis-demo.testsitehub.com" target="_blank" rel="noopener" class="challenge-chip">"I'm very nervous about dental treatment. What can I do before I visit the dentist?"</a>
+          <a href="https://draslandis-demo.testsitehub.com" target="_blank" rel="noopener" class="challenge-chip">"Diş etlerim fırçalarken kanıyor. Bu normal mi?"</a>
+        </div>
       </div>
     </div>
   </section>
@@ -164,20 +182,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>
 window.pageTranslations = {
   eyebrow:{tr:"CANLI DEMO", en:"LIVE DEMO"},
-  h1a:{tr:"<span class=\"brand-name\">DentFlow Asistan</span>'ı", en:"Try <span class=\"brand-name\">DentFlow Assistant</span>"}, h1b:{tr:"Canlı Deneyin", en:"Live"},
-  lead:{tr:"<span class=\"brand-name\">DentFlow Asistan</span>'ın gerçek bir diş kliniği web sitesinde nasıl çalıştığını görün. Göreceksiniz ki kliniğiniz emin ellerde.", en:"See how <span class=\"brand-name\">DentFlow Assistant</span> works on a real dental clinic website — and see for yourself that your clinic is in safe hands."},
-  c1:{tr:"Domain kaydı yapılmış (aynı sizin kliniğiniz gibi) gerçek bir web sitesinde çalışır.", en:"Runs on a real, domain-registered website — just like your own clinic's."},
-  c2:{tr:"Hastalarınızın tecrübe edecekleri deneyimi bire bir canlandırır.", en:"Recreates the exact experience your patients will have."},
-  c3:{tr:"Ses modu aktive edilmiştir. Dilerseniz yazın, dilerseniz konuşun.", en:"Voice mode is enabled — type if you like, or talk instead."},
+  h1a:{tr:"<span class=\"brand-name\">DentFlow</span>'u", en:"Try <span class=\"brand-name\">DentFlow</span>"}, h1b:{tr:"Bir Hastanız Gibi Deneyin", en:"Like One of Your Patients"},
+  lead:{tr:"Gerçek bir diş kliniği için hazırlanmış <span class=\"brand-name\">DentFlow Asistan</span> ile yazın veya konuşun. Sorular sorun, kliniği tanıyıp tanımadığını ve hastalarınızla nasıl iletişim kurduğunu kendiniz deneyimleyin.", en:"Chat or talk with <span class=\"brand-name\">DentFlow Assistant</span>, built for a real dental clinic. Ask it questions and see for yourself whether it knows the clinic and how it talks to your patients."},
+  c1:{tr:"Gerçek bir diş kliniği senaryosu için hazırlanmıştır.", en:"Built around a real dental clinic scenario."},
+  c2:{tr:"Asistan kliniğin hizmetlerini, doktorlarını ve çalışma düzenini bilir.", en:"The assistant knows the clinic's services, doctors, and hours."},
+  c3:{tr:"Türkçe veya farklı bir dilde yazabilir, dilerseniz sesli konuşabilirsiniz.", en:"Write in Turkish or another language — or just talk instead."},
   lb1:{tr:"DR. ASLAN DİŞ POLİKLİNİĞİ", en:"DR. ASLAN DENTAL CLINIC"},
   lb2:{tr:"Lefkoşa'da güvenilir diş sağlığı", en:"Trusted dental care in Nicosia"},
   lb3:{tr:"<span class=\"brand-name\">DentFlow Asistan</span><br>7/24 hizmetinizde", en:"<span class=\"brand-name\">DentFlow Assistant</span><br>On duty 24/7"},
   cch:{tr:"Dr. Aslan Diş Polikliniği", en:"Dr. Aslan Dental Clinic"},
-  ccp:{tr:"Dr. Aslan Diş Polikliniği, <span class=\"brand-name\">DentFlow Asistan</span>'ı gerçek bir hasta/müşteri gibi deneyebilmeniz için, bizlerin hazırladığı bir test kliniğidir. KKTC'deki diş kliniklerini inceleyerek hazırlanmıştır. Lefkoşa'nın Köşklüçiftlik semtinde; genel diş hekimliği, ortodonti ve ağız-çene cerrahisi alanlarında, hem yerli, hem de yabancı hastalara hizmet veren hayali bir kliniktir.", en:"Dr. Aslan Dental Clinic is a test clinic we built so you can try <span class=\"brand-name\">DentFlow Assistant</span> the way a real patient or customer would. It was designed by studying real dental clinics in Northern Cyprus — a fictional clinic based in the Köşklüçiftlik area of Nicosia, serving both local and international patients in general dentistry, orthodontics, and oral & maxillofacial surgery."},
-  ctabtn:{tr:"CANLI DEMOYU AÇ", en:"OPEN THE LIVE DEMO"},
-  ctanote:{tr:"Demo sitesi yeni bir sekmede açılacaktır.", en:"The demo site will open in a new tab."},
-  sc1:{tr:"Asistana gerçek bir hasta gibi sorularınızı sorun. Şikayetinizi anlatın.", en:"Ask the assistant your questions like a real patient. Describe your complaint."},
-  sc2:{tr:"Bir doktor olarak kliniğinizin resepsiyonunda duymak isteyeceğiniz veya istemeyeceğiniz konuları sorun.", en:"As a doctor, ask the things you'd want — or wouldn't want — to hear at your clinic's front desk."},
+  ccp:{tr:"<span class=\"brand-name\">DentFlow</span>'u gerçek bir hasta gibi deneyebilmeniz için hazırladığımız test kliniğidir. Lefkoşa Küçükkaymaklı'da hizmet veren gerçekçi bir KKTC diş kliniği senaryosu üzerine hazırlanmıştır.", en:"A test clinic we built so you can try <span class=\"brand-name\">DentFlow</span> like a real patient. It's modeled on a realistic dental clinic scenario based in Küçükkaymaklı, Nicosia."},
+  ctabtn:{tr:"DENTFLOW'U CANLI DENE", en:"TRY DENTFLOW LIVE"},
+  ctanote:{tr:"Yeni sekmede açılır. Kurulum veya kayıt gerekmez.", en:"Opens in a new tab. No setup or sign-up required."},
+  sc1h:{tr:"HASTA GİBİ DENEYİN", en:"TRY IT AS A PATIENT"},
+  sc1:{tr:"Diş ağrısı, tedavi, fiyat, çalışma saatleri veya kliniğe ulaşım hakkında sorun. İsterseniz farklı bir dilde yazın veya konuşun.", en:"Ask about tooth pain, treatments, prices, hours, or how to reach the clinic. Write or talk in a different language if you like."},
+  sc2h:{tr:"KLİNİK SAHİBİ GİBİ TEST EDİN", en:"TEST IT AS THE CLINIC OWNER"},
+  sc2:{tr:"Zor sorular sorun. Kliniğe özel bilgi isteyin. Asistanın neyi bildiğini, neyi söylemediğini ve hastayı gerektiğinde ekibinize nasıl yönlendirdiğini görün.", en:"Ask it hard questions. Push for clinic-specific info. See what it knows, what it won't say, and how it hands the patient off to your team when needed."},
+  challh:{tr:"DentFlow'u Biraz Zorlayın, İstediğiniz Dilde", en:"Push DentFlow a Little, in Any Language"},
   foot1:{tr:"KKTC ve Türkiye'deki diş klinikleri için geliştirildi.", en:"Built for dental clinics in Northern Cyprus and Türkiye."},
   foot2:{tr:"© 2026 DentFlow. Tüm hakları saklıdır.", en:"© 2026 DentFlow. All rights reserved."}
 };
