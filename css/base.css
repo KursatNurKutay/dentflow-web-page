@@ -170,6 +170,7 @@ section{padding:88px 0;}
 .phone-topbar{font-size:8.5px; color:#a9b6c0;}
 .phone-orb{ width:56px; height:56px; border-radius:50%; border:1.5px solid var(--blue); display:flex; align-items:center; justify-content:center; color:var(--blue); font-size:22px; }
 .phone-sub{font-size:8px; color:#6f7c87; line-height:1.4;}
+.brand-name{ font-family:var(--font-display); font-weight:700; color:var(--blue); }
 
 footer{padding:0; background:#0b0f14; color:#f4f7f2;}
 .site-footer-main{padding-top:40px; padding-bottom:40px;}
