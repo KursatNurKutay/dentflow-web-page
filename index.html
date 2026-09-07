@@ -65,7 +65,7 @@ h1 .accent{color:var(--blue);}
 .channel-grid{ display:grid; grid-template-columns:0.85fr 1.15fr; gap:60px; margin-top:50px; }
 @media (max-width:900px){ .channel-grid{grid-template-columns:1fr; gap:0;} }
 .channel-visual-wrap{ position:sticky; top:100px; align-self:start; }
-@media (max-width:900px){ .channel-visual-wrap{ position:static; margin-bottom:24px; } }
+@media (max-width:900px){ .channel-visual-wrap{ position:sticky; top:76px; margin-bottom:24px; z-index:5; } .channel-device{ max-width:220px; } }
 .channel-device{ position:relative; aspect-ratio:3/4; max-width:320px; margin:0 auto; border-radius:28px; background:#0e1319; border:1px solid #22303c; padding:14px; box-shadow:0 30px 60px -30px rgba(0,0,0,0.5); }
 .channel-panel{ position:absolute; inset:14px; border-radius:18px; background:#101820; padding:20px 18px; display:flex; flex-direction:column; gap:10px; opacity:0; transition:opacity .4s ease; pointer-events:none; }
 .channel-panel.active{ opacity:1; pointer-events:auto; }
