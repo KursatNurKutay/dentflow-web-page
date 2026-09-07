@@ -35,10 +35,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 h1{ font-family:var(--font-display); font-size:clamp(34px, 4.6vw, 52px); font-weight:700; line-height:1.08; letter-spacing:-0.5px; margin-bottom:22px; }
 h1 .accent{color:var(--blue);}
 .hero p.lead{ font-size:16.5px; color:var(--ink-dim); max-width:460px; margin-bottom:28px; }
-.input-pill{ display:inline-block; border:1.5px solid rgba(58,168,255,0.45); border-radius:999px; padding:18px 30px; background:linear-gradient(135deg, rgba(58,168,255,0.12), rgba(58,168,255,0.03)); font-size:16px; line-height:1.7; color:var(--ink-dim); box-shadow:0 10px 28px rgba(58,168,255,0.14), inset 0 1px 0 rgba(255,255,255,0.05); }
-.input-pill .pill-icon{ display:inline-flex; align-items:center; justify-content:center; width:30px; height:30px; border-radius:50%; background:rgba(58,168,255,0.16); font-size:15px; vertical-align:middle; margin:0 6px 2px 2px; }
+.input-pill{ display:inline-block; border:1.5px solid rgba(58,168,255,0.45); border-radius:999px; padding:16px 28px; background:linear-gradient(135deg, rgba(58,168,255,0.12), rgba(58,168,255,0.03)); font-size:16px; line-height:1.9; color:var(--ink-dim); box-shadow:0 10px 28px rgba(58,168,255,0.14), inset 0 1px 0 rgba(255,255,255,0.05); }
+.input-pill .pill-chip{ display:inline-flex; align-items:center; gap:7px; white-space:nowrap; vertical-align:middle; }
+.input-pill .pill-icon{ display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:rgba(58,168,255,0.16); color:var(--blue); flex-shrink:0; }
+.input-pill .pill-icon svg{ width:14px; height:14px; }
 .input-pill .blue{color:var(--blue); font-weight:700;}
-@media (max-width:520px){ .input-pill{ padding:14px 20px; font-size:14.5px; } .input-pill .pill-icon{ width:26px; height:26px; font-size:13px; } }
+@media (max-width:520px){ .input-pill{ padding:13px 18px; font-size:14px; gap:5px; } .input-pill .pill-icon{ width:24px; height:24px; } .input-pill .pill-icon svg{ width:12px; height:12px; } }
 .hero-visual{ position:relative; width:100%; aspect-ratio:1/1; max-width:480px; margin-left:auto; }
 @media (max-width:900px){ .hero-visual{margin:0 auto;} }
 .chat-scene{ position:absolute; inset:0; border-radius:28px; overflow:hidden;
@@ -50,7 +52,11 @@ h1 .accent{color:var(--blue);}
 .b3{ top:32%; left:-14%; animation-delay:0.5s;} .b4{ bottom:32%; right:-16%; animation-delay:1.6s;} .b5{ bottom:8%; left:2%; animation-delay:2.1s;}
 @keyframes float{ 0%,100%{transform:translateY(0);} 50%{transform:translateY(-8px);} }
 @media (prefers-reduced-motion:reduce){ .bubble{animation:none;} }
-@media (max-width:520px){ .bubble{font-size:10px; max-width:110px; padding:6px 9px;} }
+@media (max-width:520px){
+  .bubble{font-size:10px; max-width:108px; padding:6px 9px;}
+  .b1{ top:3%; left:2%; } .b2{ top:3%; right:2%; }
+  .b3{ top:34%; left:2%; } .b4{ bottom:30%; right:2%; } .b5{ bottom:3%; left:2%; }
+}
 .fv-lang{ background:url("assets/img/secretary-multi.jpg") center/cover no-repeat; }
 .fv-daynight{ background:url("assets/img/smile-dental.jpg") center/cover no-repeat; }
 .fv-clinic{ background:url("assets/img/home-sc-01.jpg") center/cover no-repeat; }
@@ -152,7 +158,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="eyebrow" data-i18n="eyebrow">KKTC DİŞ KLİNİKLERİ İÇİN GELİŞTİRİLDİ</div>
         <h1><span data-i18n="h1a">Diş Kliniğinizin</span><br><span class="accent" data-i18n="h1b">Dijital</span> <span data-i18n="h1c">Üyesi.</span></h1>
         <p class="lead" data-i18n="lead">DentFlow, hastalarınızın dilini otomatik olarak tespit eder. WhatsApp, Instagram, Messenger ve web sitenizde 7/24 iletişim kurar, randevu alır ve sorularını yanıtlar.</p>
-        <div class="input-pill" data-i18n="pill"><span class="pill-icon">⌨️</span> <span class="blue">Yazın</span> veya <span class="pill-icon">🎤</span> <span class="blue">konuşun</span>, her iki şekilde de yanıtlar.</div>
+        <div class="input-pill">
+          <span class="pill-chip"><span class="pill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5.5" width="20" height="13" rx="2.5"/><circle cx="6.5" cy="10.5" r="0.6" fill="currentColor" stroke="none"/><circle cx="10.5" cy="10.5" r="0.6" fill="currentColor" stroke="none"/><circle cx="14.5" cy="10.5" r="0.6" fill="currentColor" stroke="none"/><circle cx="18" cy="10.5" r="0.6" fill="currentColor" stroke="none"/><line x1="6.5" y1="14.5" x2="17.5" y2="14.5"/></svg></span><span class="blue" data-i18n="pillType">Yazın</span></span>
+          <span data-i18n="pillOr">veya</span>
+          <span class="pill-chip"><span class="pill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3z"/><path d="M19 11a7 7 0 0 1-14 0"/><line x1="12" y1="18" x2="12" y2="21.5"/><line x1="9" y1="21.5" x2="15" y2="21.5"/></svg></span><span class="blue" data-i18n="pillTalk">konuşun</span></span><span data-i18n="pillTail">, her iki şekilde de yanıtlar.</span>
+        </div>
       </div>
       <div class="hero-visual">
         <div class="chat-scene"></div>
@@ -355,7 +365,10 @@ window.pageTranslations = {
   h1b:{tr:"Dijital", en:"of Your"},
   h1c:{tr:"Üyesi.", en:"Dental Clinic."},
   lead:{tr:"DentFlow, hastalarınızın dilini otomatik olarak tespit eder. WhatsApp, Instagram, Messenger ve web sitenizde 7/24 iletişim kurar, randevu alır ve sorularını yanıtlar.", en:"DentFlow automatically detects your patients' language. It talks with them 24/7 across WhatsApp, Instagram, Messenger and your website — booking appointments and answering questions."},
-  pill:{tr:"<span class=\"pill-icon\">⌨️</span> <span class=\"blue\">Yazın</span> veya <span class=\"pill-icon\">🎤</span> <span class=\"blue\">konuşun</span>, her iki şekilde de yanıtlar.", en:"<span class=\"pill-icon\">⌨️</span> <span class=\"blue\">Type</span> or <span class=\"pill-icon\">🎤</span> <span class=\"blue\">talk</span> — it answers either way."},
+  pillType:{tr:"Yazın", en:"Type"},
+  pillOr:{tr:"veya", en:"or"},
+  pillTalk:{tr:"konuşun", en:"talk"},
+  pillTail:{tr:", her iki şekilde de yanıtlar.", en:" — it answers either way."},
   b1:{tr:"Hello! Can I book a teeth cleaning tomorrow?", en:"Hello! Can I book a teeth cleaning tomorrow?"},
   b2:{tr:"مرحباً، هل تعالجون الأطفال؟", en:"مرحباً، هل تعالجون الأطفال؟"},
   b3:{tr:"Merhaba! Diş çekimi için acil randevu lazım.", en:"Merhaba! Diş çekimi için acil randevu lazım."},
