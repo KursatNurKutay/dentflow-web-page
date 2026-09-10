@@ -1,9 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://dentflowclinic.com/index.html</loc></url>
-  <url><loc>https://dentflowclinic.com/dentflow.html</loc></url>
-  <url><loc>https://dentflowclinic.com/demo.html</loc></url>
-  <url><loc>https://dentflowclinic.com/hakkimizda.html</loc></url>
-  <url><loc>https://dentflowclinic.com/iletisim.html</loc></url>
-  <url><loc>https://dentflowclinic.com/kvkk.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://dentflowclinic.com/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dentflowclinic.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dentflowclinic.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="az" href="https://dentflowclinic.com/az/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dentflowclinic.com/"/>
+  </url>
+  <url>
+    <loc>https://dentflowclinic.com/dentflow</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dentflowclinic.com/dentflow"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dentflowclinic.com/en/dentflow"/>
+    <xhtml:link rel="alternate" hreflang="az" href="https://dentflowclinic.com/az/dentflow"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dentflowclinic.com/dentflow"/>
+  </url>
+  <url>
+    <loc>https://dentflowclinic.com/demo</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dentflowclinic.com/demo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dentflowclinic.com/en/demo"/>
+    <xhtml:link rel="alternate" hreflang="az" href="https://dentflowclinic.com/az/demo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dentflowclinic.com/demo"/>
+  </url>
+  <url>
+    <loc>https://dentflowclinic.com/fiyatlandirma</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dentflowclinic.com/fiyatlandirma"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dentflowclinic.com/en/pricing"/>
+    <xhtml:link rel="alternate" hreflang="az" href="https://dentflowclinic.com/az/qiymetlendirme"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dentflowclinic.com/fiyatlandirma"/>
+  </url>
+  <url>
+    <loc>https://dentflowclinic.com/hakkimizda</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dentflowclinic.com/hakkimizda"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dentflowclinic.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="az" href="https://dentflowclinic.com/az/haqqimizda"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dentflowclinic.com/hakkimizda"/>
+  </url>
+  <url>
+    <loc>https://dentflowclinic.com/iletisim</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dentflowclinic.com/iletisim"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dentflowclinic.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="az" href="https://dentflowclinic.com/az/elaqe"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dentflowclinic.com/iletisim"/>
+  </url>
+  <url>
+    <loc>https://dentflowclinic.com/kvkk</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dentflowclinic.com/kvkk"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dentflowclinic.com/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="az" href="https://dentflowclinic.com/az/mexfilik"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dentflowclinic.com/kvkk"/>
+  </url>
+  <url>
+    <loc>https://dentflowclinic.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dentflowclinic.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dentflowclinic.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="az" href="https://dentflowclinic.com/az/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dentflowclinic.com/"/>
+  </url>
+  <url>
+    <loc>https://dentflowclinic.com/en/dentflow</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dentflowclinic.com/dentflow"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dentflowclinic.com/en/dentflow"/>
+    <xhtml:link rel="alternate" hreflang="az" href="https://dentflowclinic.com/az/dentflow"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dentflowclinic.com/dentflow"/>
+  </url>
+  <url>
+    <loc>https://dentflowclinic.com/en/demo</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dentflowclinic.com/demo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dentflowclinic.com/en/demo"/>
+    <xhtml:link rel="alternate" hreflang="az" href="https://dentflowclinic.com/az/demo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dentflowclinic.com/demo"/>
+  </url>
+  <url>
+    <loc>https://dentflowclinic.com/en/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dentflowclinic.com/fiyatlandirma"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dentflowclinic.com/en/pricing"/>
+    <xhtml:link rel="alternate" hreflang="az" href="https://dentflowclinic.com/az/qiymetlendirme"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dentflowclinic.com/fiyatlandirma"/>
+  </url>
+  <url>
+    <loc>https://dentflowclinic.com/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dentflowclinic.com/hakkimizda"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dentflowclinic.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="az" href="https://dentflowclinic.com/az/haqqimizda"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dentflowclinic.com/hakkimizda"/>
+  </url>
+  <url>
+    <loc>https://dentflowclinic.com/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dentflowclinic.com/iletisim"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dentflowclinic.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="az" href="https://dentflowclinic.com/az/elaqe"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dentflowclinic.com/iletisim"/>
+  </url>
+  <url>
+    <loc>https://dentflowclinic.com/en/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dentflowclinic.com/kvkk"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dentflowclinic.com/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="az" href="https://dentflowclinic.com/az/mexfilik"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dentflowclinic.com/kvkk"/>
+  </url>
+  <url>
+    <loc>https://dentflowclinic.com/az/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dentflowclinic.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dentflowclinic.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="az" href="https://dentflowclinic.com/az/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dentflowclinic.com/"/>
+  </url>
+  <url>
+    <loc>https://dentflowclinic.com/az/dentflow</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dentflowclinic.com/dentflow"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dentflowclinic.com/en/dentflow"/>
+    <xhtml:link rel="alternate" hreflang="az" href="https://dentflowclinic.com/az/dentflow"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dentflowclinic.com/dentflow"/>
+  </url>
+  <url>
+    <loc>https://dentflowclinic.com/az/demo</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dentflowclinic.com/demo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dentflowclinic.com/en/demo"/>
+    <xhtml:link rel="alternate" hreflang="az" href="https://dentflowclinic.com/az/demo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dentflowclinic.com/demo"/>
+  </url>
+  <url>
+    <loc>https://dentflowclinic.com/az/qiymetlendirme</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dentflowclinic.com/fiyatlandirma"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dentflowclinic.com/en/pricing"/>
+    <xhtml:link rel="alternate" hreflang="az" href="https://dentflowclinic.com/az/qiymetlendirme"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dentflowclinic.com/fiyatlandirma"/>
+  </url>
+  <url>
+    <loc>https://dentflowclinic.com/az/haqqimizda</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dentflowclinic.com/hakkimizda"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dentflowclinic.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="az" href="https://dentflowclinic.com/az/haqqimizda"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dentflowclinic.com/hakkimizda"/>
+  </url>
+  <url>
+    <loc>https://dentflowclinic.com/az/elaqe</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dentflowclinic.com/iletisim"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dentflowclinic.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="az" href="https://dentflowclinic.com/az/elaqe"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dentflowclinic.com/iletisim"/>
+  </url>
+  <url>
+    <loc>https://dentflowclinic.com/az/mexfilik</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dentflowclinic.com/kvkk"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dentflowclinic.com/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="az" href="https://dentflowclinic.com/az/mexfilik"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dentflowclinic.com/kvkk"/>
+  </url>
 </urlset>
