@@ -20,7 +20,7 @@ header{position:sticky; top:0; z-index:100; background:rgba(11,15,20,0.85); back
 .logo{display:flex; align-items:center; gap:10px;}
 .logo-mark{width:38px; height:38px; display:block; flex-shrink:0; border-radius:21%; object-fit:cover;}
 .logo-word{font-family:var(--font-display); font-weight:700; font-size:19px; color:#fff; letter-spacing:-0.2px;}
-.logo-wide{height:36px; width:auto; display:block;}
+.logo-stacked{height:44px; width:auto; display:block;}
 nav.links{display:flex; gap:34px;}
 nav.links a{ font-size:14.5px; color:#a9b6c0; font-weight:500; position:relative; padding-bottom:4px; transition:color .2s; }
 nav.links a:hover{color:#fff;}
@@ -179,7 +179,7 @@ footer{padding:0; background:#0b0f14; color:#f4f7f2;}
 .footer-dentflow{display:flex; align-items:center; gap:10px;}
 .footer-dentflow .logo-mark{width:44px; height:44px;}
 .footer-dentflow .logo-word{font-size:22px;}
-.footer-dentflow .logo-stacked{width:56px; height:56px; display:block;}
+.footer-dentflow .logo-wide{height:42px; width:auto; display:block;}
 .footer-koby{display:flex; flex-direction:column; align-items:flex-end; gap:8px; width:fit-content; text-align:right; margin-left:auto;}
 .footer-koby img{height:52px; width:auto; display:block;}
 .footer-koby p{font-size:13.5px; font-weight:600; color:#f4f7f2; line-height:1.4; white-space:nowrap;}
@@ -191,7 +191,7 @@ footer{padding:0; background:#0b0f14; color:#f4f7f2;}
   .footer-brands{ align-items:flex-start; gap:14px; }
   .footer-dentflow .logo-mark{width:28px; height:28px;}
   .footer-dentflow .logo-word{font-size:15px;}
-  .footer-dentflow .logo-stacked{width:40px; height:40px;}
+  .footer-dentflow .logo-wide{height:32px;}
   .footer-koby{ gap:6px; }
   .footer-koby img{height:28px;}
   .footer-koby p{font-size:11px; white-space:normal;}
