@@ -46,7 +46,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .ihero h1{ font-family:var(--font-display); font-weight:700; font-size:clamp(30px,4.2vw,46px); line-height:1.08; color:#12181f; margin-bottom:8px; }
   .rule{ width:52px; height:3px; background:#1f7fbf; margin:18px 0 20px; border-radius:2px; }
   .ihero p.lead{ font-size:14.5px; color:#5a6570; max-width:440px; }
-  .icontent{ display:grid; grid-template-columns:0.85fr 1.15fr; gap:36px; align-items:start; padding-bottom:70px; }
+  .icontent{ display:grid; grid-template-columns:1.15fr 0.85fr; gap:36px; align-items:start; padding-bottom:70px; }
   @media (max-width:860px){ .icontent{grid-template-columns:1fr;} }
   .quick-actions{ display:flex; gap:10px; flex-wrap:wrap; margin:22px 0 30px; }
   .qa-btn{ display:inline-flex; align-items:center; gap:8px; border:1px solid #dfe3e8; border-radius:10px; padding:10px 16px; font-size:13px; font-weight:600; color:#12181f; }
@@ -118,45 +118,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h1 data-i18n="h1">Bizimle iletişime geçin.</h1>
       <div class="rule"></div>
       <p class="lead" data-i18n="lead">Sorularınız, görüşleriniz veya iş birliği talepleriniz için bize ulaşabilirsiniz. Ekibimiz en kısa sürede yanıtlayacaktır.</p>
-      <div class="quick-actions">
-        <a class="qa-btn reveal" href="tel:+905437424433">📞 <span data-i18n="qaTr">Türkiye: +90 543 742 44 33</span></a>
-        <a class="qa-btn reveal" href="tel:+905488781172">📞 <span data-i18n="qaKktc">KKTC: +90 548 878 11 72</span></a>
-        <a class="qa-btn reveal" href="https://wa.me/905488781172" target="_blank" rel="noopener">💬 WhatsApp</a>
-        <a class="qa-btn reveal" href="mailto:info@kobysoft.app">✉️ <span data-i18n="qaMail">E-posta Gönder</span></a>
-      </div>
     </div>
   </section>
 
   <section style="padding-top:0;">
     <div class="wrap icontent">
-      <div class="info-card reveal glow">
-        <div class="info-card-title" data-i18n="infoTitle">İletişim Bilgileri</div>
-        <div class="info-row">
-          <div class="ico">📍</div>
-          <div><h4 data-i18n="addrH">Adres</h4><p>Elmalı Sokak, No:7/5, Yukarı Girne, KKTC</p></div>
-        </div>
-        <div class="info-row">
-          <div class="ico">📞</div>
-          <div><h4 data-i18n="phTrH">Telefon (Türkiye)</h4><a href="tel:+905437424433">+90 543 742 44 33</a></div>
-        </div>
-        <div class="info-row">
-          <div class="ico">📞</div>
-          <div><h4 data-i18n="phKktcH">Telefon (KKTC)</h4><a href="tel:+905488781172">+90 548 878 11 72</a></div>
-        </div>
-        <div class="info-row">
-          <div class="ico">💬</div>
-          <div><h4>WhatsApp</h4><a href="https://wa.me/905488781172" target="_blank" rel="noopener">+90 548 878 11 72</a></div>
-        </div>
-        <div class="info-row">
-          <div class="ico">✉️</div>
-          <div><h4 data-i18n="mailH">E-posta</h4><a href="mailto:info@kobysoft.app">info@kobysoft.app</a></div>
-        </div>
-        <div class="info-row">
-          <div class="ico">🌐</div>
-          <div><h4 data-i18n="webH">Web Sitesi</h4><p>www.dentflowclinic.com</p></div>
-        </div>
-      </div>
-
       <div class="form-card reveal glow">
         <h3 data-i18n="formTitle">Bize Mesaj Gönderin</h3>
         <form id="contact-form">
@@ -205,6 +171,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <button type="submit" class="submit-btn">➤ <span data-i18n="sendBtn">Gönder</span></button>
           <div id="form-status" class="form-status"></div>
         </form>
+      </div>
+
+      <div class="info-card reveal glow">
+        <div class="info-card-title" data-i18n="infoTitle">İletişim Bilgileri</div>
+        <div class="info-row">
+          <div class="ico">📍</div>
+          <div><h4 data-i18n="addrH">Adres</h4><p>Elmalı Sokak, No:7/5, Yukarı Girne, KKTC</p></div>
+        </div>
+        <div class="info-row">
+          <div class="ico">📞</div>
+          <div><h4 data-i18n="phTrH">Telefon (Türkiye)</h4><a href="tel:+905437424433">+90 543 742 44 33</a></div>
+        </div>
+        <div class="info-row">
+          <div class="ico">📞</div>
+          <div><h4 data-i18n="phKktcH">Telefon (KKTC)</h4><a href="tel:+905488781172">+90 548 878 11 72</a></div>
+        </div>
+        <div class="info-row">
+          <div class="ico">💬</div>
+          <div><h4>WhatsApp</h4><a href="https://wa.me/905488781172" target="_blank" rel="noopener">+90 548 878 11 72</a></div>
+        </div>
+        <div class="info-row">
+          <div class="ico">✉️</div>
+          <div><h4 data-i18n="mailH">E-posta</h4><a href="mailto:info@kobysoft.app">info@kobysoft.app</a></div>
+        </div>
+        <div class="info-row">
+          <div class="ico">🌐</div>
+          <div><h4 data-i18n="webH">Web Sitesi</h4><p>www.dentflowclinic.com</p></div>
+        </div>
       </div>
     </div>
   </section>
