@@ -1,7 +1,25 @@
+const nodemailer = require('nodemailer');
+
 const ALLOWED_SUBJECTS = new Set([
   'Genel Bilgi', 'Demo Talebi', 'Fiyat Teklifi', 'Teknik Destek', 'İş Birliği', 'Diğer'
 ]);
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+let transporter;
+function getTransporter() {
+  if (!transporter) {
+    transporter = nodemailer.createTransport({
+      host: 'smtp.migadu.com',
+      port: 465,
+      secure: true,
+      auth: {
+        user: process.env.MIGADU_SMTP_USER,
+        pass: process.env.MIGADU_SMTP_PASS
+      }
+    });
+  }
+  return transporter;
+}
 
 module.exports = async (req, res) => {
   if (req.method !== 'POST') {
@@ -21,33 +39,19 @@ module.exports = async (req, res) => {
     return;
   }
 
-  const apiKey = process.env.RESEND_API_KEY;
-  if (!apiKey) {
+  if (!process.env.MIGADU_SMTP_USER || !process.env.MIGADU_SMTP_PASS) {
     res.status(500).json({ error: 'Email service not configured' });
     return;
   }
 
   try {
-    const resendRes = await fetch('https://api.resend.com/emails', {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        from: 'DentFlow Web Sitesi <contact@kobysoft.app>',
-        to: ['info@kobysoft.app'],
-        reply_to: email,
-        subject: `[DentFlow İletişim] ${subject}`,
-        text: `Ad Soyad: ${name}\nE-posta: ${email}\nKonu: ${subject}\n\n${message}`
-      })
+    await getTransporter().sendMail({
+      from: 'DentFlow Web Sitesi <info@dentflowclinic.com>',
+      to: 'info@dentflowclinic.com',
+      replyTo: email,
+      subject: `[DentFlow İletişim] ${subject}`,
+      text: `Ad Soyad: ${name}\nE-posta: ${email}\nKonu: ${subject}\n\n${message}`
     });
-
-    if (!resendRes.ok) {
-      console.error('Resend error', resendRes.status, await resendRes.text());
-      res.status(502).json({ error: 'Failed to send email' });
-      return;
-    }
 
     res.status(200).json({ ok: true });
   } catch (err) {
