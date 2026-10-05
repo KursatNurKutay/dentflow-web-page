@@ -13,7 +13,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pricing — DentFlow Dental Software</title>
-<meta name="description" content="DentFlow pricing: start with DentFlow Basic, then add channels like WhatsApp, Instagram and Messenger and enable voice per channel as needed. See setup fees and payment terms for this dental clinic software.">
+<meta name="description" content="DentFlow pricing: start with DentFlow Basic, then enable voice replies if needed. See setup fees and payment terms for this dental clinic software.">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="https://dentflowclinic.com/en/pricing">
@@ -27,7 +27,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:site_name" content="DentFlow">
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="Pricing — DentFlow Dental Software">
-<meta property="og:description" content="DentFlow pricing: start with DentFlow Basic, then add channels like WhatsApp, Instagram and Messenger and enable voice per channel as needed.">
+<meta property="og:description" content="DentFlow pricing: start with DentFlow Basic, then enable voice replies if needed.">
 <meta property="og:url" content="https://dentflowclinic.com/en/pricing">
 <meta property="og:image" content="https://dentflowclinic.com/assets/img/og-cover.png">
 <meta property="og:image:width" content="1200">
@@ -43,7 +43,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .price-hero h1{ font-family:var(--font-display); font-weight:700; font-size:clamp(30px,4vw,44px); line-height:1.1; margin-bottom:16px; }
   .price-hero h1 .blue{color:var(--blue);}
   .price-hero p.lead{ font-size:15.5px; color:var(--ink-dim); max-width:600px; margin:0 auto; }
-  .price-steps{ margin-top:14px; }
+  .price-steps{ margin-top:14px; grid-template-columns:repeat(3,1fr); }
+  @media (max-width:800px){ .price-steps{grid-template-columns:1fr 1fr;} }
+  @media (max-width:520px){ .price-steps{grid-template-columns:1fr;} }
   .price-steps .value-item{ position:relative; }
   .price-steps .step-num{ font-family:var(--font-display); font-weight:700; font-size:12px; color:var(--blue); letter-spacing:0.5px; margin-bottom:6px; }
   .price-config{ background:var(--card); border:1px solid var(--card-border); border-radius:20px; padding:8px 36px; box-shadow:0 20px 50px -35px rgba(0,0,0,0.25); max-width:680px; margin:0 auto; }
@@ -81,7 +83,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   "name": "DentFlow",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web",
-  "description": "Modular, multilingual patient communication software for dental clinics.",
+  "description": "Simple, multilingual, web-based patient communication software for dental clinics.",
   "url": "https://dentflowclinic.com/en/dentflow",
   "publisher": { "@type": "Organization", "name": "KOBY SOFT" },
   "inLanguage": ["tr", "en", "az"]
@@ -120,7 +122,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="wrap">
       <div class="eyebrow" style="justify-content:center;">PRICING</div>
       <h1>DentFlow <span class="blue">Pricing</span></h1>
-      <p class="lead"><span class="brand-name">DentFlow</span> works on a modular pricing model. You start with <span class="brand-name">DentFlow Basic</span>, add the communication channels your clinic needs, and, if you'd like, choose voice replies separately for each channel.</p>
+      <p class="lead"><span class="brand-name">DentFlow</span> works on a simple pricing model. You start with <span class="brand-name">DentFlow Basic</span>, and can add voice replies if you'd like.</p>
     </div>
   </section>
 
@@ -134,16 +136,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="value-item reveal">
           <div class="step-num">STEP 2</div>
-          <h4>Add Channels</h4>
-          <p>Add whichever of WhatsApp, Instagram and Messenger/Facebook fit your clinic — one at a time or all together.</p>
+          <h4>Choose Voice</h4>
+          <p>Turn on voice replies for your website whenever you like — text or voice, your choice.</p>
         </div>
         <div class="value-item reveal">
           <div class="step-num">STEP 3</div>
-          <h4>Choose Voice</h4>
-          <p>Turn on voice replies separately for each channel — text where you want it, voice where you want it.</p>
-        </div>
-        <div class="value-item reveal">
-          <div class="step-num">STEP 4</div>
           <h4>Setup & Payment</h4>
           <p>You'll find the one-time setup fee and the subscription billing schedule below.</p>
         </div>
@@ -155,7 +152,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="wrap">
       <div class="section-head center">
         <h2>Build Your Own <span class="blue">DentFlow</span></h2>
-        <p style="color:var(--ink-dim); font-size:14.5px; margin-top:8px;">The example below shows how the modular structure works.</p>
+        <p style="color:var(--ink-dim); font-size:14.5px; margin-top:8px;">You can see DentFlow Basic and the optional voice add-on below.</p>
       </div>
 
       <div class="price-config reveal glow">
@@ -170,23 +167,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="price-row sub">
           <div class="price-label">Website <span class="tag">Voice</span></div>
           <div class="price-value">+€25 / mo</div>
-        </div>
-      </div>
-
-      <p class="price-group-label">Additional Channels</p>
-
-      <div class="price-config reveal glow">
-        <div class="price-row">
-          <div class="price-label">WhatsApp</div>
-          <div class="price-status">In Progress</div>
-        </div>
-        <div class="price-row">
-          <div class="price-label">Instagram</div>
-          <div class="price-status">In Progress</div>
-        </div>
-        <div class="price-row">
-          <div class="price-label">Messenger / Facebook</div>
-          <div class="price-status">In Progress</div>
         </div>
       </div>
 
