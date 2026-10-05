@@ -56,7 +56,7 @@ section{padding:88px 0;}
 .f-icon{ width:44px; height:44px; border-radius:12px; border:1px solid rgba(58,168,255,0.35); display:flex; align-items:center; justify-content:center; color:var(--blue); }
 .feature-card h3{font-family:var(--font-display); font-size:18px; font-weight:600;}
 .feature-card p{font-size:14px; color:var(--ink-dim);}
-.f-visual{ margin-top:6px; height:150px; border-radius:12px; overflow:hidden; position:relative; background:#eef1f5; border:1px solid var(--card-border); display:flex; align-items:center; justify-content:center; }
+.f-visual{ margin-top:auto; height:150px; border-radius:12px; overflow:hidden; position:relative; background:#eef1f5; border:1px solid var(--card-border); display:flex; align-items:center; justify-content:center; }
 
 .band{ background:var(--band); color:var(--band-ink); border-radius:24px; display:grid; grid-template-columns:0.9fr 1.1fr; overflow:hidden; }
 @media (max-width:800px){ .band{grid-template-columns:1fr;} }
