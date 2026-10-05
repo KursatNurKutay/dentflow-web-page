@@ -183,24 +183,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="info-card reveal glow">
         <div class="info-card-title">Əlaqə Məlumatları</div>
         <div class="info-row">
-          <div class="ico">📍</div>
-          <div><h4>Ünvan</h4><p>Elmalı Sokak, No:7/5, Yukarı Girne, KKTC (Şimali Kipr)</p></div>
-        </div>
-        <div class="info-row">
-          <div class="ico">📞</div>
-          <div><h4>Telefon (Türkiyə)</h4><a href="tel:+905437424433">+90 543 742 44 33</a></div>
-        </div>
-        <div class="info-row">
-          <div class="ico">📞</div>
-          <div><h4>Telefon (Şimali Kipr)</h4><a href="tel:+905488781172">+90 548 878 11 72</a></div>
-        </div>
-        <div class="info-row">
           <div class="ico">💬</div>
-          <div><h4>WhatsApp</h4><a href="https://wa.me/905488781172" target="_blank" rel="noopener">+90 548 878 11 72</a></div>
+          <div><h4>WhatsApp</h4><a href="https://wa.me/905437424433" target="_blank" rel="noopener">+90 543 742 44 33</a></div>
         </div>
         <div class="info-row">
           <div class="ico">✉️</div>
-          <div><h4>E-poçt</h4><a href="mailto:info@kobysoft.app">info@kobysoft.app</a></div>
+          <div><h4>E-poçt</h4><a href="mailto:info@dentflowclinic.com">info@dentflowclinic.com</a></div>
         </div>
         <div class="info-row">
           <div class="ico">🌐</div>
@@ -266,10 +254,10 @@ document.getElementById('contact-form').addEventListener('submit', async functio
     const body = encodeURIComponent(`Ad Soyad: ${data.name}\nE-poçt: ${data.email}\n\n${data.message}`);
     status.classList.add('err');
     status.innerHTML = document.documentElement.lang === 'en'
-      ? 'Could not reach the server — <a href="mailto:info@kobysoft.app?subject='+subject+'&body='+body+'">click here to send this as an email instead</a>.'
+      ? 'Could not reach the server — <a href="mailto:info@dentflowclinic.com?subject='+subject+'&body='+body+'">click here to send this as an email instead</a>.'
       : (document.documentElement.lang === 'az'
-        ? 'Serverə çatmaq mümkün olmadı — bunun əvəzinə <a href="mailto:info@kobysoft.app?subject='+subject+'&body='+body+'">e-poçt olaraq göndərmək üçün buraya klikləyin</a>.'
-        : 'Sunucuya ulaşılamadı — <a href="mailto:info@kobysoft.app?subject='+subject+'&body='+body+'">bunun yerine e-posta olarak göndermek için tıklayın</a>.');
+        ? 'Serverə çatmaq mümkün olmadı — bunun əvəzinə <a href="mailto:info@dentflowclinic.com?subject='+subject+'&body='+body+'">e-poçt olaraq göndərmək üçün buraya klikləyin</a>.'
+        : 'Sunucuya ulaşılamadı — <a href="mailto:info@dentflowclinic.com?subject='+subject+'&body='+body+'">bunun yerine e-posta olarak göndermek için tıklayın</a>.');
   }finally{
     btn.disabled = false;
   }
