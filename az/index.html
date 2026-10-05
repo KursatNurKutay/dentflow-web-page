@@ -72,38 +72,7 @@ h1 .accent{color:var(--blue);}
 .fv-team{ background:url("/assets/img/secretary-multi.jpg") center/cover no-repeat; }
 .fv-ai{ background:url("/assets/img/ai-asistan.jpg") center/cover no-repeat; }
 .fv-clinic{ background:url("/assets/img/home-sc-01.jpg") center/cover no-repeat; }
-
-.channel-grid{ display:grid; grid-template-columns:0.85fr 1.15fr; gap:60px; margin-top:50px; }
-@media (max-width:900px){ .channel-grid{grid-template-columns:1fr; gap:0;} }
-.channel-visual-wrap{ position:sticky; top:100px; align-self:start; }
-@media (max-width:900px){ .channel-visual-wrap{ position:static; margin-bottom:24px; } }
-.channel-device{ position:relative; aspect-ratio:3/4; max-width:320px; margin:0 auto; border-radius:28px; background:#0e1319; border:1px solid #22303c; padding:14px; box-shadow:0 30px 60px -30px rgba(0,0,0,0.5); }
-.channel-panel{ position:absolute; inset:14px; border-radius:18px; background:#101820; padding:20px 18px; display:flex; flex-direction:column; gap:10px; opacity:0; transition:opacity .4s ease; pointer-events:none; }
-.channel-panel.active{ opacity:1; pointer-events:auto; }
-.channel-panel-head{ display:flex; align-items:center; gap:9px; font-size:11.5px; font-weight:700; color:#a9b6c0; margin-bottom:4px; }
-.channel-panel-head .badge{ width:28px; height:28px; border-radius:9px; display:flex; align-items:center; justify-content:center; font-size:13px; flex-shrink:0; }
-.channel-panel-head .badge-icon{ width:34px; height:34px; object-fit:contain; flex-shrink:0; filter:drop-shadow(0 2px 6px rgba(0,0,0,0.35)); }
-.channel-step-icon{ width:30px; height:30px; object-fit:contain; vertical-align:-7px; margin-right:10px; }
-.chat-msg{ border-radius:11px; padding:9px 13px; font-size:12px; max-width:85%; line-height:1.4; }
-.chat-msg.bot{ background:#1b2530; color:#dfe7ee; align-self:flex-start; }
-.chat-msg.user{ background:var(--blue); color:#0b0f14; align-self:flex-end; font-weight:600; }
-.voice-wave{ display:flex; align-items:center; justify-content:center; gap:4px; height:36px; margin:2px 0; }
-.voice-wave span{ width:3px; border-radius:2px; background:var(--blue); animation:wave 1.1s ease-in-out infinite; }
-.voice-wave span:nth-child(1){height:12px; animation-delay:0s;}
-.voice-wave span:nth-child(2){height:24px; animation-delay:0.1s;}
-.voice-wave span:nth-child(3){height:34px; animation-delay:0.2s;}
-.voice-wave span:nth-child(4){height:20px; animation-delay:0.3s;}
-.voice-wave span:nth-child(5){height:14px; animation-delay:0.4s;}
-@keyframes wave{ 0%,100%{transform:scaleY(0.5);} 50%{transform:scaleY(1);} }
-@media (prefers-reduced-motion:reduce){ .voice-wave span{animation:none;} }
-.channel-steps{ display:flex; flex-direction:column; }
-.channel-step{ min-height:30vh; display:flex; flex-direction:column; justify-content:center; padding:16px 0; opacity:0.32; transition:opacity .35s ease; }
-.channel-step.active{ opacity:1; }
-.channel-step:last-child{ min-height:16vh; }
-@media (max-width:900px){ .channel-step{ min-height:0; opacity:1; padding:18px 0; } }
-.channel-step-num{ font-family:var(--font-display); font-size:13px; font-weight:700; color:var(--blue); margin-bottom:10px; letter-spacing:0.5px; }
-.channel-step h3{ font-family:var(--font-display); font-size:clamp(22px,2.6vw,28px); font-weight:700; margin-bottom:10px; }
-.channel-step p{ color:var(--ink-dim); font-size:15px; max-width:420px; line-height:1.6; }
+.fv-dental{ background:url("/assets/img/dental-5.jpg") center/cover no-repeat; }
 
 .band-photo{ background:url("/assets/img/smiley-paste.jpg") center/cover no-repeat; }
 .compare-grid{ display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:44px; }
@@ -184,7 +153,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div>
         <div class="eyebrow">Klinikanız artıq xəstələrinizin dilində danışır.</div>
         <h1><span>Hər xəstəyə öz dilində bir salam.</span><br><span>Komandanızın yeni üzvü:</span> <span class="accent">DentFlow Asistenti</span></h1>
-        <p class="lead"><span class="brand-name">DentFlow Asistenti</span> şənbə-bazar demədən, 7/24 xəstələrinizlə maraqlanır.<br>Vebsaytınızda, yazılı və ya səsli, ehtiyacları ilə maraqlanır.</p>
+        <p class="lead"><span class="brand-name">DentFlow Asistenti</span> şənbə-bazar demədən, 7/24 xəstələrinizlə maraqlanır.<br>Onların dilini avtomatik olaraq müəyyən edir və öz dillərində cavab verir. İstəsələr yazaraq, istəsələr danışaraq.</p>
         <div class="input-pills">
           <span class="mini-pill"><span class="pill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5.5" width="20" height="13" rx="2.5"/><circle cx="6.5" cy="10.5" r="0.6" fill="currentColor" stroke="none"/><circle cx="10.5" cy="10.5" r="0.6" fill="currentColor" stroke="none"/><circle cx="14.5" cy="10.5" r="0.6" fill="currentColor" stroke="none"/><circle cx="18" cy="10.5" r="0.6" fill="currentColor" stroke="none"/><line x1="6.5" y1="14.5" x2="17.5" y2="14.5"/></svg></span><span>İstəsəniz</span> <span class="blue">Yazın</span></span>
           <span class="mini-pill"><span class="pill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3z"/><path d="M19 11a7 7 0 0 1-14 0"/><line x1="12" y1="18" x2="12" y2="21.5"/><line x1="9" y1="21.5" x2="15" y2="21.5"/></svg></span><span>İstəsəniz</span> <span class="blue">Danışın</span></span>
@@ -219,6 +188,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p>Xəstə ünsiyyətini öz üzərinə götürür, resepsiyanınıza vaxt qazandırır. Lazım olduqda istifadə etdiyiniz sistemlərlə inteqrasiya oluna bilir.</p>
           <div class="f-visual fv-team"></div>
         </div>
+        <div class="feature-card reveal glow">
+          <h3>Əsas Stomatologiya Təhsili Almışdır</h3>
+          <p>Bütün xəstələri və tələbləri eyni bilik və eyni diqqətlə qarşılayır və yönləndirir.</p>
+          <div class="f-visual fv-dental"></div>
+        </div>
       </div>
     </div>
   </section>
@@ -226,39 +200,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <section class="channel-story">
     <div class="wrap">
       <div class="section-head center">
-        <h2>Tək Asistent, <span class="blue">Yazılı və Səsli</span></h2>
-        <p><span class="brand-name">DentFlow Asistenti</span> vebsaytınızda — yazılı və ya səsli — eyni bilik və eyni diqqətlə cavab verir.</p>
-      </div>
-      <div class="channel-grid">
-        <div class="channel-visual-wrap">
-          <div class="channel-device">
-            <div class="channel-panel active" data-panel="web">
-              <div class="channel-panel-head"><img class="badge-icon" src="/assets/img/icons/web.png" alt="Web"><span>Vebsayt Vidceti</span></div>
-              <div class="chat-msg bot">Klinikamıza xoş gəlmisiniz. Sizə necə kömək edə bilərəm?</div>
-              <div class="chat-msg user">Bir neçə ay əvvəl mənə kanal müalicəsinə ehtiyac ola biləcəyi deyilmişdi. Diş yenidən ağrımağa başladı.</div>
-              <div class="chat-msg bot">Diş yenidən ağrımağa başladığına görə, bir görüş təyin etməyimiz yerində olar.</div>
-            </div>
-            <div class="channel-panel" data-panel="voice">
-              <div class="channel-panel-head"><img class="badge-icon" src="/assets/img/icons/voice.svg" alt="Səsli Rejim"><span>Səsli Rejim</span></div>
-              <div class="voice-wave"><span></span><span></span><span></span><span></span><span></span></div>
-              <div class="chat-msg bot" dir="rtl">مرحبًا بكم في عيادتنا. كيف يمكنني مساعدتك؟</div>
-              <div class="chat-msg user" dir="rtl">🎤 "قيل لي منذ بضعة أشهر إنني قد أحتاج إلى علاج قناة الجذر. بدأ السن يؤلمني مرة أخرى."</div>
-              <div class="chat-msg bot" dir="rtl">بما أن السن قد بدأ يؤلمك مرة أخرى، فمن المناسب أن نحدد لك موعدًا.</div>
-            </div>
-          </div>
-        </div>
-        <div class="channel-steps">
-          <div class="channel-step active" data-channel="web">
-            <div class="channel-step-num">01</div>
-            <h3><img class="channel-step-icon" src="/assets/img/icons/web.png" alt=""><span>Vebsayt</span></h3>
-            <p>Ziyarətçi saytınızda sual verir, <span class="brand-name">DentFlow Asistenti</span> anında və təbii bir söhbətlə cavab verir — heç gözlətmədən.</p>
-          </div>
-          <div class="channel-step" data-channel="voice">
-            <div class="channel-step-num">02</div>
-            <h3><img class="channel-step-icon" src="/assets/img/icons/voice.svg" alt=""><span>Səsli Rejim</span></h3>
-            <p>Xəstəniz istəsə danışır — <span class="brand-name">DentFlow Asistenti</span>, Google Chirp 3: HD ilə təbii və insan səsinə yaxın bir tərzdə cavab verir.</p>
-          </div>
-        </div>
+        <h2>Tək Asistent, <span class="blue">Yazılı və ya Səsli</span></h2>
       </div>
     </div>
   </section>
@@ -354,68 +296,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <script src="/js/site.js"></script>
 <script>
-(function(){
-  var steps = document.querySelectorAll('.channel-step');
-  var panels = document.querySelectorAll('.channel-panel');
-  if(!steps.length || !panels.length) return;
-  var channels = Array.prototype.map.call(panels, function(p){ return p.dataset.panel; });
-  function setActive(channel){
-    panels.forEach(function(p){ p.classList.toggle('active', p.dataset.panel === channel); });
-    steps.forEach(function(s){ s.classList.toggle('active', s.dataset.channel === channel); });
-  }
-  var mql = window.matchMedia('(max-width:900px)');
-  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var autoTimer = null;
-  var observer = null;
-
-  function stopAuto(){ if(autoTimer){ clearInterval(autoTimer); autoTimer = null; } }
-  function stopObserver(){ if(observer){ observer.disconnect(); observer = null; } }
-
-  function startAuto(){
-    stopObserver();
-    if(autoTimer) return;
-    var i = 0;
-    setActive(channels[i]);
-    autoTimer = setInterval(function(){
-      i = (i + 1) % channels.length;
-      setActive(channels[i]);
-    }, 2000);
-  }
-
-  function startObserver(){
-    stopAuto();
-    if(observer) return;
-    var ticking = false;
-    function update(){
-      ticking = false;
-      var viewportCenter = window.innerHeight / 2;
-      var closest = null, closestDist = Infinity;
-      steps.forEach(function(s){
-        var r = s.getBoundingClientRect();
-        var dist = Math.abs((r.top + r.height / 2) - viewportCenter);
-        if(dist < closestDist){ closestDist = dist; closest = s; }
-      });
-      if(closest){ setActive(closest.dataset.channel); }
-    }
-    function onScroll(){
-      if(!ticking){ ticking = true; requestAnimationFrame(update); }
-    }
-    window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', onScroll);
-    update();
-    observer = { disconnect: function(){
-      window.removeEventListener('scroll', onScroll);
-      window.removeEventListener('resize', onScroll);
-    } };
-  }
-
-  function applyMode(){
-    if(mql.matches && !reduceMotion){ startAuto(); }
-    else { startObserver(); }
-  }
-  applyMode();
-  if(mql.addEventListener){ mql.addEventListener('change', applyMode); }
-})();
 (function(){
   var nums = document.querySelectorAll('.stat-num[data-count]');
   if(!nums.length) return;
