@@ -1,0 +1,7 @@
+{
+  "name": "dentflow-web-page",
+  "private": true,
+  "dependencies": {
+    "nodemailer": "^10.0.14"
+  }
+}
