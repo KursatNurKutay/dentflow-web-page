@@ -4,8 +4,8 @@
   <url>
     <loc>https://dentflowclinic.com/</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://dentflowclinic.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dentflowclinic.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="az" href="https://dentflowclinic.com/az/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dentflowclinic.com/en"/>
+    <xhtml:link rel="alternate" hreflang="az" href="https://dentflowclinic.com/az"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dentflowclinic.com/"/>
   </url>
   <url>
@@ -51,10 +51,10 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dentflowclinic.com/kvkk"/>
   </url>
   <url>
-    <loc>https://dentflowclinic.com/en/</loc>
+    <loc>https://dentflowclinic.com/en</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://dentflowclinic.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dentflowclinic.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="az" href="https://dentflowclinic.com/az/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dentflowclinic.com/en"/>
+    <xhtml:link rel="alternate" hreflang="az" href="https://dentflowclinic.com/az"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dentflowclinic.com/"/>
   </url>
   <url>
@@ -100,10 +100,10 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dentflowclinic.com/kvkk"/>
   </url>
   <url>
-    <loc>https://dentflowclinic.com/az/</loc>
+    <loc>https://dentflowclinic.com/az</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://dentflowclinic.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dentflowclinic.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="az" href="https://dentflowclinic.com/az/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dentflowclinic.com/en"/>
+    <xhtml:link rel="alternate" hreflang="az" href="https://dentflowclinic.com/az"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dentflowclinic.com/"/>
   </url>
   <url>
