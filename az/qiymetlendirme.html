@@ -51,8 +51,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .price-config{ background:var(--card); border:1px solid var(--card-border); border-radius:20px; padding:8px 36px; box-shadow:0 20px 50px -35px rgba(0,0,0,0.25); max-width:680px; margin:0 auto; }
   .price-row{ display:flex; align-items:center; justify-content:space-between; gap:16px; padding:18px 0; border-bottom:1px solid var(--card-border); }
   .price-row:last-child{border-bottom:none;}
-  .price-row.sub{ padding-left:22px; padding-top:10px; padding-bottom:10px; }
-  .price-row.sub .price-label{ font-size:12.5px; color:var(--ink-faint); }
   .price-row.total{ padding:22px 0; }
   .price-label{ font-size:14.5px; font-weight:600; color:var(--ink); display:flex; align-items:center; gap:8px; }
   .price-label .tag{ font-size:10.5px; font-weight:700; letter-spacing:0.4px; color:var(--blue); background:rgba(58,168,255,0.1); border-radius:999px; padding:3px 9px; }
@@ -63,7 +61,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .price-note{ text-align:center; font-size:13px; color:var(--ink-faint); max-width:560px; margin:20px auto 0; line-height:1.6; }
   .price-group-label{ font-family:var(--font-display); font-weight:700; font-size:14px; color:var(--ink-dim); text-align:center; margin:26px 0 14px; }
   .price-status{ font-size:11.5px; font-weight:700; letter-spacing:0.3px; color:#a9720c; background:#fdf3e0; border-radius:999px; padding:5px 12px; white-space:nowrap; }
-  .billing-note{ background:rgba(58,168,255,0.06); border:1px solid rgba(58,168,255,0.2); border-radius:14px; padding:18px 22px; max-width:680px; margin:28px auto 0; font-size:13.5px; color:var(--ink-dim); line-height:1.6; text-align:center; }
   .setup-flow{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px; margin-top:30px; }
   @media (max-width:800px){ .setup-flow{grid-template-columns:1fr;} }
   .setup-stage{ background:var(--card); border:1px solid var(--card-border); border-radius:16px; padding:26px; }
@@ -155,14 +152,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="price-label">DentFlow Yazılı</div>
           <div class="price-value">€20 / ay</div>
         </div>
-        <div class="price-row sub">
+        <div class="price-row total">
           <div class="price-label">DentFlow Səsli və Yazılı</div>
           <div class="price-value">+€25 / ay</div>
         </div>
-      </div>
-
-      <div class="billing-note">
-        Qiymətlər müqayisə asanlığı üçün <strong>aylıq ekvivalent</strong> şəklində göstərilir. Abunəlik haqları <strong>6 aylıq dövrlər</strong> üzrə tutulur — aylıq faturalandırma tətbiq edilmir.
       </div>
     </div>
   </section>
